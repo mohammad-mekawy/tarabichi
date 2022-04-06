@@ -75,6 +75,7 @@ body {
 
 .hero {
   overflow-x: clip;
+  min-height: 630px;
 }
 
 .hero .right-arch {
