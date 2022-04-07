@@ -31,6 +31,9 @@ color: var(--mid-green) !important;
 .mt-n100{
     margin-top: -100px !important;
 }
+.mt-n5{
+    margin-top: -30px !important;
+}
 @media(max-width:786px) {
     .mt-n100{
         margin-top: -25px !important;
@@ -60,8 +63,10 @@ color: var(--mid-green) !important;
     margin-top: 35px;
 }
 .hero{
+    background-image: url(../img/about-hero.webp);
+    background-position: center center;
+    background-size: cover;
     overflow-x: clip;
-    min-height: 630px;
     .right-arch{
         top: -40px;
         right: 0px;
@@ -84,19 +89,26 @@ color: var(--mid-green) !important;
         width: 210px;
         animation: banner-icon-rotate 6s infinite ease-in-out;
     }
+    .banner{
+        min-height: 400px;
+        padding-top: 225px;
+    }
+    .breadcrumb-item{
+        font-family: BebasNeue;
+        font-size: 27px;
+        line-height: 0.89;
+        color: #bbb;
+        a{
+            text-decoration: none;
+            color: #fff;
+        }
+    }
 }
 /* hero end */
-// find a doctor start
-.find-a-doctor{
-    min-height: 410px;
-    .scalable{
-        margin: 0 21px 0 0;
-        border-radius: 8px;
-        box-shadow: 0 3px 40px 0 rgba(0, 0, 0, 0.07);
-        background-color: #fff;
-        transition: all 500ms;
-        z-index: 9;
-    }
+// about start
+.about{
+    padding: 60px 0;
+    min-height: 578px;
     .pattern-circle{
         bottom: -10px;
         left: 0;
@@ -109,215 +121,8 @@ color: var(--mid-green) !important;
         bottom: -200px;
         right: 0;
     }
-    .T-large{
-        @media(min-width:768px) {
-            width: 50%;
-        }
-        font-size: 42px;
-        padding: 42px 22px 58px 26px;
-    }
-    .T-small{
-        @media(min-width:768px) {
-            width: 25%;
-        }        font-size: 23px;
-        padding: 35px 25px 34px;
-    }
-    .form-select {
-        font-size: 16px;
-        margin-bottom: 33px;
-        font-weight: normal;
-        font-stretch: condensed;
-        font-style: normal;
-        line-height: normal;
-        letter-spacing: normal;
-        color: var(--greyish-brown);
-        background-image: url(../img/icon-drop-down.svg);
-        background-size: auto;
-        &:focus{
-            border-color: var(--mid-green);
-            outline: 0;
-            box-shadow: 0 0 0 0 transparent;
-        }
-      }
-    .Book-an-Appointment {
-        font-family: BebasNeue;
-        font-size: 17px;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: normal;
-        letter-spacing: normal;
-        color: #fff;
-        background-color: var(--mid-green);
-        width: 100%;
-        border: 2px solid var(--mid-green);
-        border-radius: 2px;
-        padding-top: 6px;
-        transition: 500ms;
-        &:hover{
-            background-color: transparent;
-            color: var(--mid-green);
-        }
-      }
-    .title {
-        margin: 33px 0 33px;
-        font-family: BebasNeue;
-        font-size: 100%;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.14;
-        letter-spacing: normal;
-        color: var(--text);
-      }
-      .desc{
-        margin: 17px 6px 0;
-        font-family: Barlow;
-        font-size: 14px;
-        font-weight: normal;
-        font-stretch: condensed;
-        font-style: normal;
-        line-height: 1.64;
-        letter-spacing: 0.28px;
-        text-align: center;
-        color: var(--text)
-      }
-} 
-
-// find a doctor end
-
-// About us start
-.about-us{
->img{
-    position: absolute;
-    transition: all 500ms;
-    z-index: -1;
-    top: 180px;
-    left: 70px;
-}
-.first{
-    top: 35px;
-    left: 45px;
-}
-.sec{
-    top: 80px;
-    left: 75px;
-}
-.third{
-    top: 135px;
-    left: 85px;
-}
-.fourth{
-    top: 180px;
-    left: 70px;
-}
-.fifth{
-    top: 200px;
-    left: 50px;
-}
-.nav{
-        @media(min-width:768px) {
-            &::before{
-                content: "";
-                background-image: url(../img/left-arch.webp);
-                width: 230px;
-                height: 386px;
-                position: absolute;
-                background-repeat: no-repeat;
-                left: 0;
-                z-index: -1;
-            }
-        }
-        .nav-link{
-            object-fit: contain;
-            font-family: BebasNeue;
-            font-size: 30px;
-            line-height: 1.41;
-            color: #2d2d2d;
-            text-align: left;
-            width: fit-content;
-            text-shadow: 0px 0px 10px white;
-            &::after{
-                content: "";
-                width: 0;
-                height: 3px;
-                background-color: var(--mid-green);
-                display: block;
-                margin: 16px 0 0;
-                transition: all 500ms;
-            }
-            &:hover{
-                color: var(--mid-green);
-                &::after{
-                    width: 50%;
-                }
-            }
-        }
-        .nav-link:first-child{
-            padding-left: 30px;
-        }
-        .nav-link:nth-child(2){
-            padding-left: 50px;
-        }
-        .nav-link:nth-child(3){
-            padding-left: 70px;
-        }
-        .nav-link:nth-child(4){
-            padding-left: 50px;
-        }
-        .nav-link:nth-child(5){
-            padding-left: 30px;
-        }
-        .nav-link.active{
-            font-size: 40px;
-            line-height: 0.8;
-            color: var(--mid-green);
-            background-color: transparent;
-            &::after{
-                width: 100%;
-            }
-        }
-    }
-.tab-content{
-        .title{
-            margin: 0 30px 0 10px;
-            font-family: BebasNeue;
-            font-size: 32px;
-            line-height: 1.41;
-            color: #2d2d2d;
-        }
-        .desc{
-            margin: 12px 0 23px 13px;
-            font-family: Barlow;
-            font-size: 19px;
-            font-stretch: condensed;
-            line-height: 1.47;
-            color: var(--greyish-brown);
-            text-align: justify;
-        }
-        .btn-success{
-            background-color: var(--mid-green);
-            font-family: BebasNeue;
-            font-size: 17px;
-            color: #fff;
-            margin-left: 15px;
-        }
-    }
-.tab-pane{
-    img{
-        width: 100%;
-    }
-}
-}
-// About us end
-
-// Institutes start
-.Institutes{
-    a{
-        text-decoration: none;
-    }
     .title{
-        margin-bottom: 40px;
+        margin-bottom: 30px;
         object-fit: contain;
         font-family: BebasNeue;
         font-size: 51px;
@@ -337,50 +142,27 @@ color: var(--mid-green) !important;
             &::after{
                 width: 100%;
             }
-        }
-    }
-    .spe-box{
-        img{
-            width: 100%;
-        }
-        h3{
-            font-family: BebasNeue;
-            font-size: 33px;
-            line-height: 1.3;
-            color: #2d2d2d;
-            font-weight: 500;
-            width: 80%;
-            margin-top: 15px;
-            &::after{
-                content: "";
-                width: 80%;
-                height: 3px;
-                background-color: var(--mid-green);
-                display: block;
-                transition: all 500ms;
-                margin-bottom: 40px;
+        }}
+        .desc{
+            margin: 33px 0 0;
+            font-size: 19px;
+            line-height: 1.74;
+            color: #333;
+          }
+          .doctors-images{
+            img{
+                width: 417px;
             }
-        }
-    }
+          }
 }
-// Institutes end
-
-// locations start
-.locations{
-    margin: 40px 0 60px;
-    min-height: 640px;
-    .pattern{
-        bottom: 25%;
-        right: 22%;
-    }
-    .infinity{
-        bottom: -5%;
-        right: 0;
-    }
+// message start
+.message{
     .title{
+        margin-bottom: 30px;
+        object-fit: contain;
         font-family: BebasNeue;
         font-size: 51px;
-        line-height: 0.47;
+        line-height: 1;
         color: var(--mid-green);
         width: fit-content;
         &::after{
@@ -389,154 +171,54 @@ color: var(--mid-green) !important;
             height: 3px;
             background-color: var(--mid-green);
             display: block;
-            margin: 16px 0 40px;
+            margin: 16px 0 0;
             transition: all 500ms;
         }
         &:hover{
             &::after{
                 width: 100%;
             }
-        }
-    }
-    .cards{
-        height: 100%;
-        a{
-            display: block;
-            text-decoration: none;
-        }
-    }
-    .address{
-        padding: 5px 25px 0;
-        width: 50%;
-        border: 2px solid var(--mid-green);
-        border-radius: 10px;
-        background: #fff;
-        z-index: 9;
-        color: var(--mid-green);
-        transition: all 500ms;
-        &:hover{
-            background-color: var(--mid-green);
-            color: #fff;
-        }
-        h4{
+        }}
+        .desc{
+            margin: 33px 0 0;
+            font-size: 19px;
+            line-height: 1.74;
+            color: #333;
+          }
+          .signature{
+            margin: 110px 2px 0 342px;
+            font-family: RedSkyPersonalUse;
+            font-size: 27px;
+            color: #2d2d2d;
+          }
+          .metrix-box{
+            margin: 0 30px 30px 0;
+            padding: 60px 42px 0 46px;
+            border-radius: 8px;
+            box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.06);
+            border: solid 1px #f1f1f1;
+            background-color: #fff;
+            min-height: 295px;
+            p,h4{
             font-family: BebasNeue;
-            font-size: 22px;
-            line-height: 1.23;
+            font-size: 24px;
+            line-height: 2.04;
+            text-align: center;
+            color: #333;
             margin: 0;
-            text-decoration: none;
-            &::after{
-                content: "";
-                width: 80%;
-                height: 1px;
-                background-color: var(--mid-green);
-                display: block;
-                margin: 3px auto 0;
             }
-        }
-        
-        h5{
-            font-size: 18px;
-            line-height: 1.5;
-            margin: 0;
-            text-decoration: none;
-        }
-    }
-}
-// locations end
-
-// footer start
-footer{
-    background-color: var(--mid-green);
-    padding-top: 100px;
-    .info{
-        font-size: 14px;
-        line-height: 1.5;
-        margin: 30px 0 40px;
-    }
-    .time{
-        font-size: 14px;
-    }
-    h5{
-        font-size: 24px;
-        line-height: 1.33;
-        margin-bottom: 30px;
-        text-transform: uppercase;
-    }
-    ul{
-        list-style: none;
-        padding-left: 0;
-    }
-    li{
-        font-size: 14px;
-        line-height: 1.29;
-        margin-bottom: 7px;
-        a{
-            text-decoration: none;
-            color: #fff;
-            &::after{
-                content: "";
-                width: 0px;
-                height: 1px;
-                background-color: #fff;
-                display: block;
-                transition: all 500ms;
-            }
-            &:hover{
-                color: #fff;
+            .number{
                 &::after{
-                    width: 30px;
+                    content: "";
+                    width: 90px;
+                    height: 2px;
+                    background-color: var(--mid-green);
+                    display: block;
+                    margin: auto;
                 }
             }
-        }
-    }
-    .social-h{
-        font-family: BebasNeue;
-        font-size: 24px;
-        line-height: 1.17;
-        margin-bottom: 15px;
-    }
-    .social img{
-        padding-right: 40px;
-        height: 23px;
-        transition: all 500ms;
-        &:hover{
-            transform: scale(1.1);
-        }
-    }
-    .Subscribe{
-            font-family: BebasNeue;
-            font-size: 16px;
-            line-height: 1.75;
-    }
-    .form-control{
-            color: #fff;
-            background-color: transparent;
-            border-color: #fff;
-            &:focus{
-                border-color: #fff;
-                box-shadow: 0 0 0 0;
-                background-color: transparent;
-                color: #fff;
-            }
-    }
-    ::placeholder { 
-            color: #fff !important;
-            opacity: .8;
-    }
-    :-ms-input-placeholder { 
-            color: #fff !important;
-    }
-    ::-ms-input-placeholder { 
-            color: #fff !important;
-    }
-    .btn{
-        background-color: #fff;
-        color: #000;
-    }
-    .copyright{
-        background-color:#2d671d;
-        padding:10px 0 2px;
-        color: rgba(255, 255, 255, 0.6);;
-    }
+          }
 }
-// footer ewnd
+
+// footer
+@import "footer"

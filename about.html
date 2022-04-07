@@ -57,7 +57,6 @@
     <!-- Hero start -->
     <section class="hero">
       <div class="banner position-relative">
-        <img src="assets/img/about-hero.webp" alt="banner" width="100%" />
         <img
           src="assets/img/right-arch.webp"
           class="position-absolute right-arch"
@@ -68,69 +67,45 @@
           class="position-absolute banner-green-ball"
           alt="logo icon ball"
         />
+        <nav style="--bs-breadcrumb-divider: ' '" aria-label="breadcrumb">
+          <ol class="breadcrumb justify-content-center align-items-center">
+            <li class="breadcrumb-item"><a href="/">Home .</a></li>
+            <li class="breadcrumb-item active" aria-current="page">About Us</li>
+          </ol>
+        </nav>
       </div>
     </section>
 
-    <!-- find a doctor start -->
-    <section class="find-a-doctor position-relative">
-      <div class="container text-center d-md-flex align-items-start">
-        <div class="scalable T-large mt-n100">
-          <img src="assets/img/find-a-doctor-icon.svg" alt="icon" />
-          <h1 class="title">Find a Doctor</h1>
-          <form action="">
-            <div class="row">
-              <div class="col-md-6">
-                <select class="form-select" aria-label="Default select example">
-                  <option selected>Speciality</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
-              </div>
-              <div class="col-md-6">
-                <select class="form-select" aria-label="Default select example">
-                  <option selected>Location</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
-              </div>
+    <!-- About Us start -->
+    <section class="about position-relative">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h2 class="title">About Us</h2>
+            <p class="desc">
+              Tarabichi center is a one-of-a-kind center in the entire GCC
+              region that provides the best healthcare services. We provide with
+              an excellent team of experienced doctors from all around the world
+              - reducing the need for patients to travel abroad for treatments.
+              We not only provide healthcare services but also innovate in
+              healthcare. Our innovations have been patented and registered in
+              many countries.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <div class="doctors-images position-relative">
+              <img
+                src="assets/img/tara1.webp"
+                alt="Dr Tarabichi"
+                class="img-fluid position-absolute"
+              />
+              <img
+                src="assets/img/tara2.webp"
+                alt="Dr Tarabichi"
+                class="img-fluid position-absolute"
+              />
             </div>
-            <div class="row">
-              <div class="col-md-6">
-                <select class="form-select" aria-label="Default select example">
-                  <option selected>City</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
-              </div>
-              <div class="col-md-6">
-                <select class="form-select" aria-label="Default select example">
-                  <option selected>Area</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
-              </div>
-            </div>
-            <button type="submit" class="Book-an-Appointment">
-              Book an Appointment
-            </button>
-          </form>
-        </div>
-        <div class="scalable T-small mt-2">
-          <img src="assets/img/doctor-icon.svg" alt="icon" />
-          <h1 class="title">Surgical Education & Training</h1>
-          <p class="desc">Find out more about upcoming events & workshops</p>
-        </div>
-        <div class="scalable T-small mt-5">
-          <img src="assets/img/inter-icon.svg" alt="icon" />
-          <h1 class="title">internationalpatient assistance</h1>
-          <p class="desc">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor
-          </p>
+          </div>
         </div>
       </div>
       <img
@@ -149,553 +124,61 @@
         class="position-absolute half-circle"
       />
     </section>
-    <div class="divider"></div>
-    <!-- about us start -->
-    <!-- PC view -->
-    <section class="about-us position-relative d-none d-md-block">
-      <img src="assets/img/green-ball.webp" alt="logo ball" id="ball" />
+    <!-- About Us end -->
+
+    <!-- Founder’s message start -->
+    <section class="message position-relative">
       <div class="container">
-        <div class="d-flex align-items-start">
-          <div
-            class="nav flex-column nav-pills me-3 col-md-4"
-            id="v-pills-tab"
-            role="tablist"
-            aria-orientation="vertical"
-          >
-            <button
-              class="nav-link"
-              id="v-pills-About-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#v-pills-About"
-              type="button"
-              role="tab"
-              aria-controls="v-pills-About"
-              aria-selected="true"
-              data-ball="first"
-            >
-              About Us
-            </button>
-            <button
-              class="nav-link"
-              id="v-pills-message-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#v-pills-message"
-              type="button"
-              role="tab"
-              aria-controls="v-pills-message"
-              aria-selected="false"
-              data-ball="sec"
-            >
-              message from chairman
-            </button>
-            <button
-              class="nav-link"
-              id="v-pills-Specialized-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#v-pills-Specialized"
-              type="button"
-              role="tab"
-              aria-controls="v-pills-Specialized"
-              aria-selected="false"
-              data-ball="third"
-            >
-              Specialized Patient Care
-            </button>
-            <button
-              class="nav-link active"
-              id="v-pills-Events-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#v-pills-Events"
-              type="button"
-              role="tab"
-              aria-controls="v-pills-Events"
-              aria-selected="false"
-              data-ball="fourth"
-            >
-              Upcoming Events
-            </button>
-            <button
-              class="nav-link"
-              id="v-pills-tsesi-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#v-pills-tsesi"
-              type="button"
-              role="tab"
-              aria-controls="v-pills-tsesi"
-              aria-selected="false"
-              data-ball="fifth"
-            >
-              tsesi
-            </button>
-          </div>
-          <div class="tab-content" id="v-pills-tabContent">
-            <div
-              class="tab-pane fade show active"
-              id="v-pills-About"
-              role="tabpanel"
-              aria-labelledby="v-pills-About-tab"
-            >
-              <div class="row">
-                <div class="col-md-6">
-                  <img src="assets/img/tab1.webp" alt="doctors image" />
-                </div>
-                <div
-                  class="col-md-6 d-flex flex-column justify-content-between"
-                >
-                  <h2 class="title">
-                    19th TSESI Hands-On Cadaver Dissection And LiveSurgeryCourse
-                  </h2>
-                  <p class="desc">
-                    This one-of-a-kind course will showcase the expertise and
-                    knowledge of world-renowned surgeons in the field of Ear,
-                    Sinus, Anterior Skull base and Rhinoplasty surgeries. This
-                    course will provide a comprehensive overview of the surgical
-                    anatomy of Ear and Sinuses, different techniques &
-                    approaches in ESS, Anterior Skull base and Rhinoplasty
-                    surgery.
-                  </p>
-                  <div class="d-grid gap-2">
-                    <button class="btn btn-success" type="button">
-                      Learn More
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="tab-pane fade"
-              id="v-pills-message"
-              role="tabpanel"
-              aria-labelledby="v-pills-message-tab"
-            >
-              <div class="row">
-                <div class="col-md-6">
-                  <img src="assets/img/tab1.webp" alt="doctors image" />
-                </div>
-                <div
-                  class="col-md-6 d-flex flex-column justify-content-between"
-                >
-                  <h2 class="title">
-                    19th TSESI Hands-On Cadaver Dissection And LiveSurgeryCourse
-                  </h2>
-                  <p class="desc">
-                    This one-of-a-kind course will showcase the expertise and
-                    knowledge of world-renowned surgeons in the field of Ear,
-                    Sinus, Anterior Skull base and Rhinoplasty surgeries. This
-                    course will provide a comprehensive overview of the surgical
-                    anatomy of Ear and Sinuses, different techniques &
-                    approaches in ESS, Anterior Skull base and Rhinoplasty
-                    surgery.
-                  </p>
-                  <div class="d-grid gap-2">
-                    <button class="btn btn-success" type="button">
-                      Learn More
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="tab-pane fade"
-              id="v-pills-Specialized"
-              role="tabpanel"
-              aria-labelledby="v-pills-Specialized-tab"
-            >
-              <div class="row">
-                <div class="col-md-6">
-                  <img src="assets/img/tab1.webp" alt="doctors image" />
-                </div>
-                <div
-                  class="col-md-6 d-flex flex-column justify-content-between"
-                >
-                  <h2 class="title">
-                    19th TSESI Hands-On Cadaver Dissection And LiveSurgeryCourse
-                  </h2>
-                  <p class="desc">
-                    This one-of-a-kind course will showcase the expertise and
-                    knowledge of world-renowned surgeons in the field of Ear,
-                    Sinus, Anterior Skull base and Rhinoplasty surgeries. This
-                    course will provide a comprehensive overview of the surgical
-                    anatomy of Ear and Sinuses, different techniques &
-                    approaches in ESS, Anterior Skull base and Rhinoplasty
-                    surgery.
-                  </p>
-                  <div class="d-grid gap-2">
-                    <button class="btn btn-success" type="button">
-                      Learn More
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="tab-pane fade"
-              id="v-pills-Events"
-              role="tabpanel"
-              aria-labelledby="v-pills-Events-tab"
-            >
-              <div class="row">
-                <div class="col-md-6">
-                  <img src="assets/img/tab1.webp" alt="doctors image" />
-                </div>
-                <div
-                  class="col-md-6 d-flex flex-column justify-content-between"
-                >
-                  <h2 class="title">
-                    19th TSESI Hands-On Cadaver Dissection And LiveSurgeryCourse
-                  </h2>
-                  <p class="desc">
-                    This one-of-a-kind course will showcase the expertise and
-                    knowledge of world-renowned surgeons in the field of Ear,
-                    Sinus, Anterior Skull base and Rhinoplasty surgeries. This
-                    course will provide a comprehensive overview of the surgical
-                    anatomy of Ear and Sinuses, different techniques &
-                    approaches in ESS, Anterior Skull base and Rhinoplasty
-                    surgery.
-                  </p>
-                  <div class="d-grid gap-2">
-                    <button class="btn btn-success" type="button">
-                      Learn More
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="tab-pane fade"
-              id="v-pills-tsesi"
-              role="tabpanel"
-              aria-labelledby="v-pills-tsesi-tab"
-            >
-              <div class="row">
-                <div class="col-md-6">
-                  <img src="assets/img/tab1.webp" alt="doctors image" />
-                </div>
-                <div
-                  class="col-md-6 d-flex flex-column justify-content-between"
-                >
-                  <h2 class="title">
-                    19th TSESI Hands-On Cadaver Dissection And LiveSurgeryCourse
-                  </h2>
-                  <p class="desc">
-                    This one-of-a-kind course will showcase the expertise and
-                    knowledge of world-renowned surgeons in the field of Ear,
-                    Sinus, Anterior Skull base and Rhinoplasty surgeries. This
-                    course will provide a comprehensive overview of the surgical
-                    anatomy of Ear and Sinuses, different techniques &
-                    approaches in ESS, Anterior Skull base and Rhinoplasty
-                    surgery.
-                  </p>
-                  <div class="d-grid gap-2">
-                    <button class="btn btn-success" type="button">
-                      Learn More
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Mob view -->
-    <section class="about-us position-relative d-md-none">
-      <div class="container">
-        <ul
-          class="nav nav-pills mb-3 justify-content-center"
-          id="pills-tab"
-          role="tablist"
-        >
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link active text-center"
-              id="pills-About-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-About"
-              type="button"
-              role="tab"
-              aria-controls="pills-About"
-              aria-selected="true"
-            >
-              About Us
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link text-center"
-              id="pills-message-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-message"
-              type="button"
-              role="tab"
-              aria-controls="pills-message"
-              aria-selected="false"
-            >
-              message from chairman
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link text-center"
-              id="pills-Specialized-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-Specialized"
-              type="button"
-              role="tab"
-              aria-controls="pills-Specialized"
-              aria-selected="false"
-            >
-              Specialized Patient Care
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link text-center"
-              id="pills-Events-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-Events"
-              type="button"
-              role="tab"
-              aria-controls="pills-Events"
-              aria-selected="false"
-            >
-              Upcoming Events
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link text-center"
-              id="pills-tsesi-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-tsesi"
-              type="button"
-              role="tab"
-              aria-controls="pills-tsesi"
-              aria-selected="false"
-            >
-              tsesi
-            </button>
-          </li>
-        </ul>
-        <div class="tab-content" id="pills-tabContent">
-          <div
-            class="tab-pane fade show active"
-            id="pills-About"
-            role="tabpanel"
-            aria-labelledby="pills-About-tab"
-          >
-            <div class="row">
-              <div class="col-md-6">
-                <img
-                  src="assets/img/tab1.webp"
-                  alt="doctors image"
-                  class="img-fluid"
-                />
-              </div>
-              <div class="col-md-6 d-flex flex-column justify-content-between">
-                <h2 class="title">
-                  19th TSESI Hands-On Cadaver Dissection And LiveSurgeryCourse
-                </h2>
-                <p class="desc">
-                  This one-of-a-kind course will showcase the expertise and
-                  knowledge of world-renowned surgeons in the field of Ear,
-                  Sinus, Anterior Skull base and Rhinoplasty surgeries. This
-                  course will provide a comprehensive overview of the surgical
-                  anatomy of Ear and Sinuses, different techniques & approaches
-                  in ESS, Anterior Skull base and Rhinoplasty surgery.
-                </p>
-                <div class="d-grid gap-2">
-                  <button class="btn btn-success" type="button">
-                    Learn More
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="tab-pane fade"
-            id="pills-message from chairman"
-            role="tabpanel"
-            aria-labelledby="pills-message from chairman-tab"
-          >
-            <div class="row">
-              <div class="col-md-6">
-                <img
-                  src="assets/img/tab1.webp"
-                  alt="doctors image"
-                  class="img-fluid"
-                />
-              </div>
-              <div class="col-md-6 d-flex flex-column justify-content-between">
-                <h2 class="title">
-                  19th TSESI Hands-On Cadaver Dissection And LiveSurgeryCourse
-                </h2>
-                <p class="desc">
-                  This one-of-a-kind course will showcase the expertise and
-                  knowledge of world-renowned surgeons in the field of Ear,
-                  Sinus, Anterior Skull base and Rhinoplasty surgeries. This
-                  course will provide a comprehensive overview of the surgical
-                  anatomy of Ear and Sinuses, different techniques & approaches
-                  in ESS, Anterior Skull base and Rhinoplasty surgery.
-                </p>
-                <div class="d-grid gap-2">
-                  <button class="btn btn-success" type="button">
-                    Learn More
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="tab-pane fade"
-            id="pills-Specialized"
-            role="tabpanel"
-            aria-labelledby="pills-Specialized-tab"
-          >
-            <div class="row">
-              <div class="col-md-6">
-                <img
-                  src="assets/img/tab1.webp"
-                  alt="doctors image"
-                  class="img-fluid"
-                />
-              </div>
-              <div class="col-md-6 d-flex flex-column justify-content-between">
-                <h2 class="title">
-                  19th TSESI Hands-On Cadaver Dissection And LiveSurgeryCourse
-                </h2>
-                <p class="desc">
-                  This one-of-a-kind course will showcase the expertise and
-                  knowledge of world-renowned surgeons in the field of Ear,
-                  Sinus, Anterior Skull base and Rhinoplasty surgeries. This
-                  course will provide a comprehensive overview of the surgical
-                  anatomy of Ear and Sinuses, different techniques & approaches
-                  in ESS, Anterior Skull base and Rhinoplasty surgery.
-                </p>
-                <div class="d-grid gap-2">
-                  <button class="btn btn-success" type="button">
-                    Learn More
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="tab-pane fade"
-            id="pills-Events"
-            role="tabpanel"
-            aria-labelledby="pills-Events-tab"
-          >
-            <div class="row">
-              <div class="col-md-6">
-                <img
-                  src="assets/img/tab1.webp"
-                  alt="doctors image"
-                  class="img-fluid"
-                />
-              </div>
-              <div class="col-md-6 d-flex flex-column justify-content-between">
-                <h2 class="title">
-                  19th TSESI Hands-On Cadaver Dissection And LiveSurgeryCourse
-                </h2>
-                <p class="desc">
-                  This one-of-a-kind course will showcase the expertise and
-                  knowledge of world-renowned surgeons in the field of Ear,
-                  Sinus, Anterior Skull base and Rhinoplasty surgeries. This
-                  course will provide a comprehensive overview of the surgical
-                  anatomy of Ear and Sinuses, different techniques & approaches
-                  in ESS, Anterior Skull base and Rhinoplasty surgery.
-                </p>
-                <div class="d-grid gap-2">
-                  <button class="btn btn-success" type="button">
-                    Learn More
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="tab-pane fade"
-            id="pills-tsesi"
-            role="tabpanel"
-            aria-labelledby="pills-tsesi-tab"
-          >
-            <div class="row">
-              <div class="col-md-6">
-                <img
-                  src="assets/img/tab1.webp"
-                  alt="doctors image"
-                  class="img-fluid"
-                />
-              </div>
-              <div class="col-md-6 d-flex flex-column justify-content-between">
-                <h2 class="title">
-                  19th TSESI Hands-On Cadaver Dissection And LiveSurgeryCourse
-                </h2>
-                <p class="desc">
-                  This one-of-a-kind course will showcase the expertise and
-                  knowledge of world-renowned surgeons in the field of Ear,
-                  Sinus, Anterior Skull base and Rhinoplasty surgeries. This
-                  course will provide a comprehensive overview of the surgical
-                  anatomy of Ear and Sinuses, different techniques & approaches
-                  in ESS, Anterior Skull base and Rhinoplasty surgery.
-                </p>
-                <div class="d-grid gap-2">
-                  <button class="btn btn-success" type="button">
-                    Learn More
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <div class="divider"></div>
-    <!-- Institutes start -->
-    <section class="Institutes">
-      <div class="container">
-        <a href="#"><h2 class="title">Institutes and our departments</h2></a>
         <div class="row">
-          <div class="col-md-4">
-            <div class="spe-box">
-              <img src="assets/img/ear1.webp" alt="speciality image" />
-              <h3>Tarabichi Stammberger Ear & Sinus</h3>
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="metrix-box text-center mt-n100">
+                  <img src="assets/img/surgery.svg" alt="" />
+                  <p class="number pt-2">10,000</p>
+                  <h4>Successful Surgeries</h4>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="metrix-box text-center">
+                  <img src="assets/img/cochlear.svg" alt="" />
+                  <p class="number pt-2">200</p>
+                  <h4>Cochlear Implant</h4>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="metrix-box text-center mt-n100">
+                  <img src="assets/img/patient.svg" alt="" />
+                  <p class="number pt-2">100,000</p>
+                  <h4>International & Local Patients</h4>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="metrix-box text-center">
+                  <img src="assets/img/cochlear.svg" alt="" />
+                  <p class="number pt-2">200</p>
+                  <h4>Cochlear Implant</h4>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="spe-box">
-              <img src="assets/img/ear2.webp" alt="speciality image" />
-              <h3>Tarabichi Barbaccia Thyroid And Neck Surgery</h3>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="spe-box">
-              <img src="assets/img/ear3.webp" alt="speciality image" />
-              <h3>Tarabichi Schmidt Lasers in ENT Institute</h3>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="spe-box">
-              <img src="assets/img/ear4.webp" alt="speciality image" />
-              <h3>Tarabichi Kapadia Base of Skull Institute</h3>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="spe-box">
-              <img src="assets/img/ear5.webp" alt="speciality image" />
-              <h3>Tarabichi Skymedical Audiology & Balance Institute</h3>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="spe-box">
-              <img src="assets/img/ear6.webp" alt="speciality image" />
-              <h3>Tarabichi Stammberger Ear & Sinus</h3>
-            </div>
+          <div class="col-md-6 d-flex flex-column justify-content-center">
+            <h2 class="title">Founder’s message</h2>
+            <p class="desc">
+              " The Tarabichi brothers are internationally recognized for their
+              surgical innovations and have focused on teaching and training
+              other surgeons from around the world. Patients from far away
+              places travel to Dubai to seek treatment instead of going to other
+              destinations in Europe and America.."
+            </p>
+            <p class="signature text-end">Moaaz Tarabichi</p>
           </div>
         </div>
       </div>
     </section>
+    <!-- Founder’s message end -->
 
     <!-- Locations start -->
     <section class="locations position-relative">
