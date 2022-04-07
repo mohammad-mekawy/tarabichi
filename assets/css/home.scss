@@ -447,6 +447,7 @@ color: var(--mid-green) !important;
 
 // footer start
 footer{
+    font-family: BebasNeue;
     background-color: var(--mid-green);
     padding-top: 100px;
     .info{
@@ -491,7 +492,6 @@ footer{
         }
     }
     .social-h{
-        font-family: BebasNeue;
         font-size: 24px;
         line-height: 1.17;
         margin-bottom: 15px;
@@ -505,7 +505,6 @@ footer{
         }
     }
     .Subscribe{
-            font-family: BebasNeue;
             font-size: 16px;
             line-height: 1.75;
     }
@@ -533,6 +532,7 @@ footer{
     .btn{
         background-color: #fff;
         color: #000;
+        font-family: BebasNeue;
     }
     .copyright{
         background-color:#2d671d;

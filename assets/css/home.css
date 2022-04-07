@@ -552,6 +552,7 @@ body {
 }
 
 footer {
+  font-family: BebasNeue;
   background-color: var(--mid-green);
   padding-top: 100px;
 }
@@ -608,7 +609,6 @@ footer li a:hover::after {
 }
 
 footer .social-h {
-  font-family: BebasNeue;
   font-size: 24px;
   line-height: 1.17;
   margin-bottom: 15px;
@@ -627,7 +627,6 @@ footer .social img:hover {
 }
 
 footer .Subscribe {
-  font-family: BebasNeue;
   font-size: 16px;
   line-height: 1.75;
 }
@@ -677,6 +676,7 @@ footer ::-ms-input-placeholder {
 footer .btn {
   background-color: #fff;
   color: #000;
+  font-family: BebasNeue;
 }
 
 footer .copyright {
