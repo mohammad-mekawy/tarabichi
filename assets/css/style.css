@@ -39,13 +39,9 @@ body {
   margin-top: -100px !important;
 }
 
-.mt-n5 {
-  margin-top: -30px !important;
-}
-
 @media (max-width: 786px) {
   .mt-n100 {
-    margin-top: -25px !important;
+    margin-top: 0 !important;
   }
 }
 
@@ -79,6 +75,8 @@ body {
 
 .hero {
   background-image: url(../img/about-hero.webp);
+  background-color: rgba(0, 0, 0, 0.35);
+  background-blend-mode: multiply;
   background-position: center center;
   background-size: cover;
   overflow-x: clip;
@@ -149,7 +147,15 @@ body {
 
 .hero .banner {
   min-height: 400px;
-  padding-top: 225px;
+  padding-top: 185px;
+  z-index: 99999;
+}
+
+.hero .title {
+  font-family: BebasNeue;
+  font-size: 56px;
+  line-height: 1.29;
+  z-index: 999;
 }
 
 .hero .breadcrumb-item {
@@ -157,6 +163,7 @@ body {
   font-size: 27px;
   line-height: 0.89;
   color: #bbb;
+  z-index: 999;
 }
 
 .hero .breadcrumb-item a {
@@ -166,7 +173,7 @@ body {
 
 /* hero end */
 .about {
-  padding: 60px 0;
+  padding: 225px 0;
   min-height: 578px;
 }
 
@@ -218,10 +225,21 @@ body {
   font-size: 19px;
   line-height: 1.74;
   color: #333;
+  width: 500px;
 }
 
 .about .doctors-images img {
-  width: 417px;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+}
+
+.about .doctors-images img:first-child {
+  top: -155px;
+  right: 0;
+}
+
+.about .doctors-images img:last-child {
+  left: 100px;
 }
 
 .message .title {
@@ -293,6 +311,85 @@ body {
   background-color: var(--mid-green);
   display: block;
   margin: auto;
+}
+
+.team .title {
+  margin-bottom: 30px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  font-family: BebasNeue;
+  font-size: 51px;
+  line-height: 1;
+  color: var(--mid-green);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.team .title::after {
+  content: "";
+  width: 90px;
+  height: 3px;
+  background-color: var(--mid-green);
+  display: block;
+  margin: 16px 0 0;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+}
+
+.team .title:hover::after {
+  width: 100%;
+}
+
+.team .doctor-box {
+  border: 1px solid transparent;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+}
+
+.team .doctor-box img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.team .doctor-box h3 {
+  font-family: BebasNeue;
+  font-size: 29px;
+  line-height: 1.66;
+  color: #2d2d2d;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.team .doctor-box h3::after {
+  content: "";
+  width: 30%;
+  height: 3px;
+  background-color: var(--mid-green);
+  display: block;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+  margin-bottom: 15px;
+}
+
+.team .doctor-box:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  border: 1px solid gainsboro;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.06);
+          box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.06);
+}
+
+.team .doctor-box:hover h3::after {
+  width: 100%;
+}
+
+.team .doctor-box h5 {
+  font-size: 16px;
+  line-height: 2;
+  color: #848484;
 }
 
 .locations {

@@ -10,4 +10,13 @@ $(document).ready(function(){
             $("#ball").removeAttr('class').addClass(T_class)
         }
     )
+    var n=1;
+    $(".doctors-images img").hover(
+        function(){
+            $(this).css({
+                "z-index":n++,
+                "filter":"unset"
+            }).siblings().css("filter","grayscale(1)")
+        }
+    )
 });
