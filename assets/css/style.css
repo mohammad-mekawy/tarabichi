@@ -177,6 +177,12 @@ body {
   min-height: 578px;
 }
 
+@media (max-width: 786px) {
+  .about {
+    padding: 70px 0;
+  }
+}
+
 .about .pattern-circle {
   bottom: -10px;
   left: 0;
@@ -225,21 +231,30 @@ body {
   font-size: 19px;
   line-height: 1.74;
   color: #333;
-  width: 500px;
+  max-width: 500px;
 }
 
 .about .doctors-images img {
+  position: absolute;
   -webkit-transition: all 500ms;
   transition: all 500ms;
+  left: 100px;
+}
+
+@media (max-width: 786px) {
+  .about .doctors-images img {
+    position: static !important;
+    padding: 20px;
+  }
 }
 
 .about .doctors-images img:first-child {
   top: -155px;
-  right: 0;
+  left: 230px;
 }
 
 .about .doctors-images img:last-child {
-  left: 100px;
+  z-index: -1;
 }
 
 .message .title {

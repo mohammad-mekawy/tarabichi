@@ -115,6 +115,9 @@ color: var(--mid-green) !important;
 // about start
 .about{
     padding: 225px 0;
+    @media(max-width:786px) {
+        padding: 70px 0;
+    }
     min-height: 578px;
     .pattern-circle{
         bottom: -10px;
@@ -155,18 +158,24 @@ color: var(--mid-green) !important;
             font-size: 19px;
             line-height: 1.74;
             color: #333;
-            width: 500px;
+            max-width: 500px;
           }
           .doctors-images{
             img{
+                position: absolute;
+                @media(max-width:786px) {
+                    position: static !important;
+                    padding: 20px;
+                }
                 transition: all 500ms;
+                left: 100px;
             }
             img:first-child{
                 top: -155px;
-                right: 0;
+                left: 230px;
             }
             img:last-child{
-                left: 100px;
+               z-index: -1;
             }
           }
         //   @keyframes T-opacity {

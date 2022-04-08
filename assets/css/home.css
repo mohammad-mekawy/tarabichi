@@ -79,6 +79,12 @@ body {
   min-height: 630px;
 }
 
+@media (max-width: 786px) {
+  .hero {
+    min-height: unset;
+  }
+}
+
 .hero .right-arch {
   top: -40px;
   right: 0px;
@@ -155,7 +161,8 @@ body {
   background-color: #fff;
   -webkit-transition: all 500ms;
   transition: all 500ms;
-  z-index: 9;
+  z-index: 9999;
+  position: relative;
 }
 
 .find-a-doctor .pattern-circle {
