@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --greyish-brown: #565656;
+  --mid-green: #589b46;
+  --vibrant-green-8: rgba(34, 216, 9, 0.08);
+  --green: #3cb71b;
+  --off-white: #f9fcf8;
+  --yellowish-tan: #f6ef89;
+  --text:#333;
+}
+@font-face {
+    font-family: BebasNeue;
+    src: url(../fonts/BebasNeue-Regular.ttf);
+}
+@font-face {
+    font-family: BarlowCondensed;
+    src: url(../fonts/BarlowCondensed-Regular.ttf);
+}
+body{
+    font-family: BarlowCondensed, sans-serif;
+}
+.C-green{
+color: var(--mid-green) !important;
+}
+.F-head{
+    font-family: BebasNeue, sans-serif;
+}
+.mt-n100{
+    margin-top: -100px !important;
+}
+@media(max-width:786px) {
+    .mt-n100{
+        margin-top: 0 !important;
+    }
+}
+.divider{
+    width: 90%;
+    height: 1px;
+    background-color: #eee;
+    margin: 60px auto;
+}
