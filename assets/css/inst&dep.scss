@@ -1,21 +1,6 @@
 @import "general";
 
 /* hero start */
-.navbar{
-    padding-bottom: 0;
-    .nav-link{
-        transition: 500ms;
-        font-size: 26px;
-        color: var(--text);
-    }
-    .nav-link.active,.nav-link:hover{
-        color: var(--mid-green) !important;
-        border-bottom: 6px solid var(--mid-green);
-    }
-}
-.navbar-nav{
-    margin-top: 35px;
-}
 .hero{
     background-image: url(../img/about-hero.webp);
     background-color: rgba(0, 0, 0, 0.35);
@@ -72,6 +57,10 @@
 
 // Institutes start
 .Institutes{
+    
+    a{
+        text-decoration: none;
+    }
     .T-tab{
         font-size: 14px;
         font-weight: 500;

@@ -25,9 +25,7 @@ $(document).ready(function(){
                 $(".sameih").css({
                     opacity:0,
                 })
-                $(".sameih2").css({
-                    filter:"grayscale(1)"
-                })
+                $(this).css("filter","grayscale(0)")
             }
         )
         $(".sameih").hover(

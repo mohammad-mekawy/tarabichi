@@ -52,7 +52,10 @@ body {
   margin: 60px auto;
 }
 
-/* hero start */
+.navbar-brand img {
+  width: 240px;
+}
+
 .navbar {
   padding-bottom: 0;
 }
@@ -73,6 +76,7 @@ body {
   margin-top: 35px;
 }
 
+/* hero start */
 .hero {
   background-image: url(../img/about-hero.webp);
   background-color: rgba(0, 0, 0, 0.35);
@@ -251,10 +255,17 @@ body {
 .about .doctors-images img:first-child {
   top: -155px;
   left: 230px;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
 }
 
 .about .doctors-images img:last-child {
   z-index: -1;
+}
+
+.about .doctors-images .sameih2 {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
 }
 
 .message .title {
@@ -501,6 +512,7 @@ footer {
   font-family: BebasNeue;
   background-color: var(--mid-green);
   padding-top: 100px;
+  letter-spacing: 1px;
 }
 
 footer .info {

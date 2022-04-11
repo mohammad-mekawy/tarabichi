@@ -52,7 +52,10 @@ body {
   margin: 60px auto;
 }
 
-/* hero start */
+.navbar-brand img {
+  width: 240px;
+}
+
 .navbar {
   padding-bottom: 0;
 }
@@ -73,6 +76,7 @@ body {
   margin-top: 35px;
 }
 
+/* hero start */
 .hero {
   background-image: url(../img/about-hero.webp);
   background-color: rgba(0, 0, 0, 0.35);
@@ -172,6 +176,10 @@ body {
 }
 
 /* hero end */
+.Institutes a {
+  text-decoration: none;
+}
+
 .Institutes .T-tab {
   font-size: 14px;
   font-weight: 500;
@@ -389,6 +397,7 @@ footer {
   font-family: BebasNeue;
   background-color: var(--mid-green);
   padding-top: 100px;
+  letter-spacing: 1px;
 }
 
 footer .info {

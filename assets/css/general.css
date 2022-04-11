@@ -51,4 +51,28 @@ body {
   background-color: #eee;
   margin: 60px auto;
 }
+
+.navbar-brand img {
+  width: 240px;
+}
+
+.navbar {
+  padding-bottom: 0;
+}
+
+.navbar .nav-link {
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  font-size: 26px;
+  color: var(--text);
+}
+
+.navbar .nav-link.active, .navbar .nav-link:hover {
+  color: var(--mid-green) !important;
+  border-bottom: 6px solid var(--mid-green);
+}
+
+.navbar-nav {
+  margin-top: 35px;
+}
 /*# sourceMappingURL=general.css.map */
