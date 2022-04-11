@@ -78,7 +78,7 @@ body {
 
 /* hero start */
 .hero {
-  background-image: url(../img/about-hero.webp);
+  background-image: url(../img/heal-banner.webp);
   background-color: rgba(0, 0, 0, 0.35);
   background-blend-mode: multiply;
   background-position: center center;
