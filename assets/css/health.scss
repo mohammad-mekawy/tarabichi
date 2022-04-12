@@ -147,8 +147,9 @@
             font-family: BebasNeue;
             font-size: 32px;
             line-height: 1.34;
+            width: 70%;
             color: #fff;
-            text-align: center;
+            text-align: left;
             transform: translateY(-120px);
             @media(max-width:786px) {
                 transform: translateY(0);
@@ -165,6 +166,7 @@
         border: solid 2px var(--mid-green);
         background-color: #fff;
         min-height: 182px;
+        width: 100%;
         p,h4{
             font-family: BebasNeue;
             font-size: 21px;
@@ -173,7 +175,7 @@
         }
         p{
             font-size: 14px;
-            line-height: 2.71;
+            line-height: normal;
         }
         .number{
             &::after{
@@ -184,6 +186,16 @@
                 display: block;
                 margin: auto;
             }
+        }
+        .register{
+            font-size: 14px;
+            &::after{
+                display: none;
+            }
+        }
+        a{
+            color: var(--mid-green);
+            font-weight: 500;
         }
       }
       
