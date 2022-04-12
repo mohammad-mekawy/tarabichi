@@ -55,8 +55,244 @@
 }
 /* hero end */
 
-// About us start
+// form start
+.form{
+    form>div{
+        margin-bottom: 33px;
+    }
+    .title{
+        font-family: BebasNeue;
+        font-size: 42px;
+        line-height: 1.14;
+        color: #333;
+    }
+    .form-select,.form-control{
+        height: 45px;
+        &:focus{
+            border-color: var(--mid-green);
+            box-shadow: 0 0 0 0.25rem #589b4640;
+        }
+        option{
+            &:hover{
+                background-color: var(--mid-green);
+            }
+        }
+    }
+    .form-select.time{
+        background-image: url(../img/time.png);
+        background-size: auto;
+    }
+    .T-btn{
+        font-size: 14px;
+        width: 100%;
+        font-weight: 500;
+        text-decoration: none;
+        text-transform: uppercase;
+        border-radius: 5px;
+        padding: 8px 0;
+        transition: all 500ms;
+        background-color: var(--mid-green);
+        color: #fff;
+        border: 2px solid transparent;
+        font-family: BebasNeue;
+        letter-spacing: .5px;
+        &:hover{
+            border: 2px solid var(--mid-green);
+            background-color: transparent;
+            color: var(--mid-green);
+        }
+    }
+    .iti{
+        width: 100%;
+    }
+}
+// form end
 
-    // About us end
+// locations start
+.locations{
+    .title{
+        font-family: BebasNeue;
+        font-size: 51px;
+        line-height: 0.47;
+        color: var(--mid-green);
+        width: fit-content;
+        margin: 10px auto 70px;
+        &::after{
+            content: "";
+            width: 90px;
+            height: 3px;
+            background-color: var(--mid-green);
+            display: block;
+            margin: 20px auto 0;
+            transition: all 500ms;
+        }
+        &:hover{
+            &::after{
+                width: 100%;
+            }
+        }
+    }
+    a{
+        text-decoration: none;
+    }
+    .loc-box{
+    &::after{
+        content: "";
+        width: 90px;
+        height: 3px;
+        background-color: var(--mid-green);
+        display: block;
+        margin: 20px auto 0;
+        transition: all 500ms;
+    }
+    &:hover{
+        &::after{
+            width: 100%;
+        }
+    }
+        >img{
+            width: 100%;
+        }
+        .title{
+            font-family: BebasNeue;
+            font-size: 24px;
+            line-height: 1;
+            margin: 0;
+            &::after{
+                display: none;
+            }
+        }
+    }
+    .col-md-3:not(:first-child){
+        .loc-box{
+            &::after{
+                margin: 44px auto 0;
+            }
+        }
+    }
+}
+// locations end
+
+// Covid Policies start
+.vaccine{
+    .title{
+        font-family: BebasNeue;
+        font-size: 51px;
+        line-height: 0.47;
+        color: var(--mid-green);
+        width: fit-content;
+        margin: 10px auto 30px;
+        &::after{
+            content: "";
+            width: 90px;
+            height: 3px;
+            background-color: var(--mid-green);
+            display: block;
+            margin: 20px auto 0;
+            transition: all 500ms;
+        }
+        &:hover{
+            &::after{
+                width: 100%;
+            }
+        }
+    }
+    a{
+        text-decoration: none;
+    }
+    .policy{
+        font-size: 19px;
+        line-height: 1.74;
+        color: #333;
+    }
+}
+// FAQs start
+.FAQs{
+    .title{
+        font-family: BebasNeue;
+        font-size: 51px;
+        line-height: 0.47;
+        color: var(--mid-green);
+        width: fit-content;
+        margin: 10px auto 30px;
+        &::after{
+            content: "";
+            width: 40%;
+            height: 3px;
+            background-color: var(--mid-green);
+            display: block;
+            margin: 20px auto 0;
+            transition: all 500ms;
+        }
+        &:hover{
+            &::after{
+                width: 100%;
+            }
+        }
+    }
+    .row{
+        background-color:#f9f9f9;
+    }
+    a{
+        text-decoration: none;
+    }
+    .accordion-item{
+        border: 0;
+        background-color: transparent;
+    }
+    .accordion-button{
+        background-color: transparent;
+        border: 0;
+        box-shadow: none;
+        font-family: BebasNeue;
+        font-size: 17px;
+        line-height: 1.41;
+        color: #2d2d2d;
+        
+    }
+    .accordion-button:not(.collapsed){
+        color: var(--mid-green);
+        border-bottom: 1px solid var(--mid-green);
+        &::after{
+            background-image: url(../img/icon-drop-down.svg);
+            background-size: 80%;
+        }
+    }
+    .accordion-body{
+        font-size: 16px;
+        line-height: 1.75;
+        color: #acacac;
+      }
+}
+// Partners start
+.Partners{
+    .title{
+        font-family: BebasNeue;
+        font-size: 51px;
+        line-height: 0.47;
+        color: var(--mid-green);
+        width: fit-content;
+        margin: 10px auto 30px;
+        &::after{
+            content: "";
+            width: 40%;
+            height: 3px;
+            background-color: var(--mid-green);
+            display: block;
+            margin: 20px auto 0;
+            transition: all 500ms;
+        }
+        &:hover{
+            &::after{
+                width: 100%;
+            }
+        }
+    }
+    a{
+        text-decoration: none;
+    }
+}
+
+
 // footer
 @import "footer"
