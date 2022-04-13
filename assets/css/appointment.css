@@ -53,7 +53,7 @@ body {
 }
 
 .navbar-brand img {
-  width: 240px;
+  width: 180px;
 }
 
 .navbar {
@@ -65,6 +65,7 @@ body {
   transition: 500ms;
   font-size: 26px;
   color: var(--text);
+  padding: 23px 10px;
 }
 
 .navbar .nav-link.active, .navbar .nav-link:hover {
@@ -74,6 +75,10 @@ body {
 
 .navbar-nav {
   margin-top: 35px;
+}
+
+.zn-1 {
+  z-index: -1;
 }
 
 /* hero start */
@@ -233,6 +238,10 @@ body {
   width: 100%;
 }
 
+.locations {
+  overflow-x: clip;
+}
+
 .locations .title {
   font-family: BebasNeue;
   font-size: 51px;
@@ -297,6 +306,11 @@ body {
   margin: 44px auto 0;
 }
 
+.locations .half-yellow-circle {
+  -webkit-transform: rotateY(180deg) translate(65px, -30px);
+          transform: rotateY(180deg) translate(65px, -30px);
+}
+
 .vaccine .title {
   font-family: BebasNeue;
   font-size: 51px;
@@ -331,6 +345,10 @@ body {
   font-size: 19px;
   line-height: 1.74;
   color: #333;
+}
+
+.FAQs {
+  overflow-x: clip;
 }
 
 .FAQs .title {
@@ -407,7 +425,7 @@ body {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  margin: 10px auto 30px;
+  margin: 10px auto 50px;
 }
 
 .Partners .title::after {
@@ -427,6 +445,16 @@ body {
 
 .Partners a {
   text-decoration: none;
+}
+
+.Partners .owl-theme .owl-dots .owl-dot span {
+  background-color: rgba(34, 216, 9, 0.25);
+  width: 16px;
+  height: 16px;
+}
+
+.Partners .owl-theme .owl-dots .owl-dot.active span, .Partners .owl-theme .owl-dots .owl-dot:hover span {
+  background-color: var(--green);
 }
 
 footer {

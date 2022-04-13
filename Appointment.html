@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/appointment.css" />
     <link rel="stylesheet" href="assets/css/intlTelInput.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
   </head>
   <body>
     <!-- nav menu start -->
@@ -224,21 +226,26 @@
     <div class="divider"></div>
     <!-- locations -->
     <section class="locations position-relative">
-      <!-- <img
-        src="assets/img/half-yellow-circle.svg"
+      <img
+        src="assets/img/pattern.svg"
         alt="pattern"
-        class="position-absolute end-0 half-yellow-circle"
+        class="position-absolute pattern end-0 pt-5 zn-1"
       />
       <img
         src="assets/img/pattern.svg"
         alt="pattern"
-        class="position-absolute pattern end-0 pe-5"
+        class="position-absolute pattern start-0 top-100 translate-middle"
+      />
+      <img
+        src="assets/img/half-yellow-circle.svg"
+        alt="pattern"
+        class="position-absolute start-0 top-100 half-yellow-circle"
       />
       <img
         src="assets/img/pattern-circle.svg"
         alt="pattern"
-        class="position-absolute top-0 start-0 translate-middle"
-      /> -->
+        class="position-absolute top-100 start-100 translate-middle"
+      />
       <div class="container text-center">
         <img src="assets/img/locations-icon.svg" alt="calender icon" />
         <h2 class="title pt-4">Our Locations</h2>
@@ -337,7 +344,7 @@
       <img
         src="assets/img/pattern-circle.svg"
         alt="pattern"
-        class="position-absolute top-50 end-0"
+        class="position-absolute top-100 start-100 translate-middle"
       />
       <div class="container text-center">
         <img src="assets/img/faq.svg" alt="calender icon" />
@@ -568,6 +575,41 @@
     <section class="Partners position-relative">
       <div class="container text-center">
         <h2 class="title pt-4">Insurance Partners</h2>
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <img src="assets/img/logo.svg" alt="Partner logo" />
+          </div>
+          <div class="item">
+            <img src="assets/img/logo.svg" alt="Partner logo" />
+          </div>
+          <div class="item">
+            <img src="assets/img/logo.svg" alt="Partner logo" />
+          </div>
+          <div class="item">
+            <img src="assets/img/logo.svg" alt="Partner logo" />
+          </div>
+          <div class="item">
+            <img src="assets/img/logo.svg" alt="Partner logo" />
+          </div>
+          <div class="item">
+            <img src="assets/img/logo.svg" alt="Partner logo" />
+          </div>
+          <div class="item">
+            <img src="assets/img/logo.svg" alt="Partner logo" />
+          </div>
+          <div class="item">
+            <img src="assets/img/logo.svg" alt="Partner logo" />
+          </div>
+          <div class="item">
+            <img src="assets/img/logo.svg" alt="Partner logo" />
+          </div>
+          <div class="item">
+            <img src="assets/img/logo.svg" alt="Partner logo" />
+          </div>
+          <div class="item">
+            <img src="assets/img/logo.svg" alt="Partner logo" />
+          </div>
+        </div>
       </div>
     </section>
 
@@ -677,6 +719,7 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/intlTelInput.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script>
       //   country code
@@ -685,6 +728,22 @@
         preferredCountries: ["ae"],
         separateDialCode: false,
         nationalMode: false,
+      });
+      // owl carousel
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        autoplay: true,
+        margin: 10,
+        nav: false,
+        items: 3,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          1000: {
+            items: 3,
+          },
+        },
       });
     </script>
   </body>

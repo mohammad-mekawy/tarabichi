@@ -97,6 +97,8 @@
             line-height: 1;
             color: var(--mid-green);
             width: fit-content;
+            text-decoration: none;
+            display: block;
             &::after{
                 content: "";
                 width: 90px;

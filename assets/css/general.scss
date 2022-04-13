@@ -44,7 +44,7 @@ color: var(--mid-green) !important;
 }
 .navbar-brand{
     img{
-        width: 240px;
+        width: 180px;
     }
 }
 .navbar{
@@ -53,6 +53,7 @@ color: var(--mid-green) !important;
         transition: 500ms;
         font-size: 26px;
         color: var(--text);
+        padding: 23px 10px;
     }
     .nav-link.active,.nav-link:hover{
         color: var(--mid-green) !important;
@@ -61,4 +62,7 @@ color: var(--mid-green) !important;
 }
 .navbar-nav{
     margin-top: 35px;
+}
+.zn-1{
+    z-index: -1;
 }

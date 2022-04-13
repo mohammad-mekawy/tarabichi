@@ -110,6 +110,7 @@
 
 // locations start
 .locations{
+    overflow-x: clip;
     .title{
         font-family: BebasNeue;
         font-size: 51px;
@@ -170,6 +171,9 @@
             }
         }
     }
+    .half-yellow-circle{
+        transform: rotateY(180deg) translate(65px,-30px);
+    }
 }
 // locations end
 
@@ -208,6 +212,7 @@
 }
 // FAQs start
 .FAQs{
+    overflow-x: clip;
     .title{
         font-family: BebasNeue;
         font-size: 51px;
@@ -272,7 +277,7 @@
         line-height: 0.47;
         color: var(--mid-green);
         width: fit-content;
-        margin: 10px auto 30px;
+        margin: 10px auto 50px;
         &::after{
             content: "";
             width: 40%;
@@ -290,6 +295,14 @@
     }
     a{
         text-decoration: none;
+    }
+    .owl-theme .owl-dots .owl-dot span{
+        background-color: rgba(34, 216, 9, 0.25);
+        width: 16px;
+        height: 16px;
+    }
+    .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+        background-color: var(--green);
     }
 }
 
