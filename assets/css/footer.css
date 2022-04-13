@@ -1,12 +1,10 @@
 footer {
-  font-family: BebasNeue;
   background-color: var(--mid-green);
   padding-top: 100px;
-  letter-spacing: 1px;
 }
 
 footer .info {
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.5;
   margin: 30px 0 40px;
 }
@@ -16,6 +14,7 @@ footer .time {
 }
 
 footer h5 {
+  font-family: BebasNeue;
   font-size: 24px;
   line-height: 1.33;
   margin-bottom: 30px;
@@ -36,6 +35,8 @@ footer li {
 footer li a {
   text-decoration: none;
   color: #fff;
+  font-size: 18px;
+  line-height: 1.5;
 }
 
 footer li a::after {

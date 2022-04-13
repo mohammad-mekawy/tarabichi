@@ -220,6 +220,40 @@
             color: var(--mid-green);
         }
         }
+        .Blogs{
+            .nav{
+                border-left: 1px solid #979797;
+            }
+            .nav-link{
+                color: #7d7d7d;
+                background-color: transparent;
+                border: 0;
+                border-bottom: 1px solid #eee;                
+                margin: 0 0 0 8px;
+                font-family: BebasNeue;
+                font-size: 18px;
+                line-height: 1.56;
+                text-align: left;
+                transition: all 500ms;
+                &:hover{
+                    color: var(--mid-green);
+                    text-decoration: underline;
+                }
+                &::before{
+                    content: "";
+                    display: inline-block;
+                    position: absolute;
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 50%;
+                    border: 1px solid var(--mid-green);
+                }
+            }
+            .nav-link.active{
+                color: var(--mid-green);
+                text-decoration: underline;
+            }
+        }
 }
     // About us end
 // footer

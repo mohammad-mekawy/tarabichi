@@ -377,6 +377,44 @@ body {
   color: var(--mid-green);
 }
 
+.tabs .Blogs .nav {
+  border-left: 1px solid #979797;
+}
+
+.tabs .Blogs .nav-link {
+  color: #7d7d7d;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid #eee;
+  margin: 0 0 0 8px;
+  font-family: BebasNeue;
+  font-size: 18px;
+  line-height: 1.56;
+  text-align: left;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+}
+
+.tabs .Blogs .nav-link:hover {
+  color: var(--mid-green);
+  text-decoration: underline;
+}
+
+.tabs .Blogs .nav-link::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid var(--mid-green);
+}
+
+.tabs .Blogs .nav-link.active {
+  color: var(--mid-green);
+  text-decoration: underline;
+}
+
 .locations {
   margin: 40px 0 60px;
   min-height: 640px;
@@ -468,14 +506,12 @@ body {
 }
 
 footer {
-  font-family: BebasNeue;
   background-color: var(--mid-green);
   padding-top: 100px;
-  letter-spacing: 1px;
 }
 
 footer .info {
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.5;
   margin: 30px 0 40px;
 }
@@ -485,6 +521,7 @@ footer .time {
 }
 
 footer h5 {
+  font-family: BebasNeue;
   font-size: 24px;
   line-height: 1.33;
   margin-bottom: 30px;
@@ -505,6 +542,8 @@ footer li {
 footer li a {
   text-decoration: none;
   color: #fff;
+  font-size: 18px;
+  line-height: 1.5;
 }
 
 footer li a::after {
