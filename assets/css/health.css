@@ -379,6 +379,7 @@ body {
 
 .tabs .Blogs .nav {
   border-left: 1px solid #979797;
+  padding-left: 20px;
 }
 
 .tabs .Blogs .nav-link {
@@ -393,11 +394,16 @@ body {
   text-align: left;
   -webkit-transition: all 500ms;
   transition: all 500ms;
+  position: relative;
 }
 
 .tabs .Blogs .nav-link:hover {
   color: var(--mid-green);
   text-decoration: underline;
+}
+
+.tabs .Blogs .nav-link:hover::before {
+  background-color: var(--mid-green);
 }
 
 .tabs .Blogs .nav-link::before {
@@ -407,12 +413,104 @@ body {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  border: 1px solid var(--mid-green);
+  border: 2px solid var(--mid-green);
+  top: 12px;
+  left: -35px;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
 }
 
 .tabs .Blogs .nav-link.active {
   color: var(--mid-green);
   text-decoration: underline;
+}
+
+.tabs .Blogs .nav-link.active::before {
+  background-color: var(--mid-green);
+}
+
+.tabs .Blogs .book-btn {
+  color: var(--mid-green);
+  border: 2px solid var(--mid-green);
+  border-radius: 4px;
+  bottom: -100px;
+  width: 95%;
+  left: 5%;
+  text-decoration: none;
+  font-family: BebasNeue;
+  font-size: 18px;
+  letter-spacing: 1.06px;
+  padding: 8px 0;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+}
+
+.tabs .Blogs .book-btn:hover {
+  background-color: var(--mid-green);
+  color: #fff;
+}
+
+.tabs .Blogs .col-md-4 {
+  margin-bottom: 20px;
+}
+
+.tabs .Blogs a {
+  text-decoration: none;
+}
+
+.tabs .Blogs .post {
+  border-radius: 5px;
+  border: 1px solid #eee;
+}
+
+.tabs .Blogs .post img {
+  width: 100%;
+}
+
+.tabs .Blogs .post .content {
+  padding: 18px 18px 0;
+}
+
+.tabs .Blogs .post .post-title {
+  font-family: BebasNeue;
+  font-size: 18px;
+  line-height: 1.39;
+  color: #2d2d2d;
+}
+
+.tabs .Blogs .post .post-excerpt {
+  font-size: 12px;
+  line-height: 1.67;
+  color: var(--greyish-brown);
+}
+
+.tabs .Blogs .post .post-hover-layer {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  padding: 0 20px;
+  background-image: url(../img/blog/post1-layer.webp);
+  background-size: cover;
+  background-color: #589b46;
+  background-blend-mode: multiply;
+  opacity: 0;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+}
+
+.tabs .Blogs .post .post-hover-layer .post-title {
+  font-family: BebasNeue;
+  font-size: 18px;
+  line-height: 1.39;
+}
+
+.tabs .Blogs .post .post-hover-layer .post-meta {
+  font-size: 14px;
+  line-height: 2.14;
+}
+
+.tabs .Blogs .post:hover .post-hover-layer {
+  opacity: 1;
 }
 
 .locations {
