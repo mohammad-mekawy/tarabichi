@@ -59,10 +59,3 @@ $(document).ready(function(){
         }, false)
       })
   })();
-//   country code
-  var input1 = document.querySelector("#validationTooltipUsernubmer");
-    window.intlTelInput(input1, {
-      preferredCountries: ['ae'],
-      separateDialCode: false,
-      nationalMode: false,
-    });

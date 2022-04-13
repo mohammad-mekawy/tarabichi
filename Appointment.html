@@ -678,5 +678,14 @@
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/intlTelInput.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+      //   country code
+      var input1 = document.querySelector("#validationTooltipUsernubmer");
+      window.intlTelInput(input1, {
+        preferredCountries: ["ae"],
+        separateDialCode: false,
+        nationalMode: false,
+      });
+    </script>
   </body>
 </html>

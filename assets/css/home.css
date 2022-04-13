@@ -390,12 +390,12 @@ body {
 
 .about-us .tab-content .desc {
   margin: 12px 0 23px 13px;
-  font-family: Barlow;
   font-size: 19px;
   font-stretch: condensed;
   line-height: 1.47;
   color: var(--greyish-brown);
   text-align: justify;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .about-us .tab-content .btn-success {
