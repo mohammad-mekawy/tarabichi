@@ -447,6 +447,31 @@ body {
   text-decoration: none;
 }
 
+.Partners .owl-carousel .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Partners .owl-carousel .owl-item img {
+  width: auto;
+}
+
+.Partners .owl-carousel .owl-stage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .Partners .owl-theme .owl-dots .owl-dot span {
   background-color: rgba(34, 216, 9, 0.25);
   width: 16px;

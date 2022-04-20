@@ -197,20 +197,22 @@
                 }
             }
         }
-        .nav-link:first-child{
-            padding-left: 115px;
-        }
-        .nav-link:nth-child(2){
-            padding-left: 135px;
-        }
-        .nav-link:nth-child(3){
-            padding-left: 155px;
-        }
-        .nav-link:nth-child(4){
-            padding-left: 135px;
-        }
-        .nav-link:nth-child(5){
-            padding-left: 115px;
+        @media(min-width:786px) {
+            .nav-link:first-child{
+                padding-left: 115px;
+            }
+            .nav-link:nth-child(2){
+                padding-left: 135px;
+            }
+            .nav-link:nth-child(3){
+                padding-left: 155px;
+            }
+            .nav-link:nth-child(4){
+                padding-left: 135px;
+            }
+            .nav-link:nth-child(5){
+                padding-left: 115px;
+            }
         }
         .nav-link.active{
             font-size: 32px;
