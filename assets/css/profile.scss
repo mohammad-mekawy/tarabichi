@@ -1,0 +1,62 @@
+@import "general";
+
+/* hero start */
+.hero{
+    background-image: url(../img/pannel-banner.jpg);
+    background-color: rgba(0, 0, 0, 0.35);
+    background-blend-mode: multiply;
+    background-position: center center;
+    background-size: cover;
+    overflow-x: clip;
+    .right-arch{
+        top: -40px;
+        right: 0px;
+        @media(max-width:768px) {
+            top: 0;
+        }
+    }
+    @keyframes banner-icon-rotate {
+        0%{transform: rotateZ(100deg);    right: 0px;
+            width: 210px;}
+        50%{    transform: rotateZ(-50deg);
+            right: -70px;
+            width: 215px; top: 80px;}
+        100%{transform: rotateZ(100deg);    right: 0px;
+            width: 210px;}
+    }
+    .banner-green-ball{
+        top: 70px;
+        right: 0;
+        width: 210px;
+        animation: banner-icon-rotate 6s infinite ease-in-out;
+    }
+    .banner{
+        min-height: 400px;
+        padding-top: 185px;
+        z-index: 99999;
+    }
+    .title{
+        font-family: BebasNeue;
+        font-size: 56px;
+        line-height: 1.29;
+        z-index: 999;
+    }
+    .breadcrumb-item{
+        font-family: BebasNeue;
+        font-size: 27px;
+        line-height: 0.89;
+        color: #bbb;
+        z-index: 999;
+        a{
+            text-decoration: none;
+            color: #fff;
+        }
+    }
+}
+/* hero end */
+
+
+// locations
+@import "locations";
+// footer
+@import "footer";
