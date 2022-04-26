@@ -66,6 +66,7 @@ body {
   font-size: 26px;
   color: var(--text);
   padding: 23px 10px;
+  border-bottom: 6px solid transparent;
 }
 
 .navbar .nav-link.active, .navbar .nav-link:hover {

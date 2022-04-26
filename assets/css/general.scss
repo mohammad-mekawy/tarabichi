@@ -54,6 +54,7 @@ color: var(--mid-green) !important;
         font-size: 26px;
         color: var(--text);
         padding: 23px 10px;
+        border-bottom: 6px solid transparent;
     }
     .nav-link.active,.nav-link:hover{
         color: var(--mid-green) !important;
