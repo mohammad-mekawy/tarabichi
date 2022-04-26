@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tarabichi | pannel of doctors</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/panel.css" />
+  </head>
+  <body>
+    <!-- nav menu start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container">
+        <a class="navbar-brand C-green" href="/">
+          <img src="assets/img/logo.svg" alt="logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-around"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav me-0 mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link F-head" aria-current="page" href="about.html"
+                >About us
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link F-head" href="institutes&Departments.html"
+                >institutes & Departments</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link F-head" href="health-library.html"
+                >health library</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link F-head" href="Appointment.html"
+                >Appointments & Access</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active F-head" href="panel.html"
+                >Panel Of Doctors</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- nav menu end -->
+
+    <!-- Hero start -->
+    <section class="hero">
+      <div class="banner position-relative">
+        <!-- <img
+          src="assets/img/right-arch.webp"
+          class="position-absolute right-arch d-none d-md-block"
+          alt="logo icon"
+        />
+        <img
+          src="assets/img/inner-ball.webp"
+          class="position-absolute banner-green-ball d-none d-md-block"
+          alt="logo icon ball"
+        /> -->
+        <h1 class="title text-center text-white position-relative">
+          Panel Of Doctors
+        </h1>
+      </div>
+    </section>
+    <!-- form -->
+    <section class="form position-relative pt-5 mb-5">
+      <img
+        src="assets/img/half-yellow-circle.svg"
+        alt="pattern"
+        class="position-absolute end-0 half-yellow-circle"
+      />
+      <img
+        src="assets/img/pattern.svg"
+        alt="pattern"
+        class="position-absolute pattern end-0 pe-5"
+      />
+      <img
+        src="assets/img/pattern-circle.svg"
+        alt="pattern"
+        class="position-absolute top-0 start-0 translate-middle"
+      />
+      <div class="container text-center">
+        <img src="assets/img/find-a-doctor-icon.svg" alt="calender icon" />
+        <h2 class="title pt-4">Find a Doctor</h2>
+        <form class="row g-3 mt-5">
+          <div class="col-md-4 position-relative">
+            <select class="form-select" id="validationTooltip04" required>
+              <option selected disabled value="">Speciality</option>
+              <option>Speciality1</option>
+              <option>Speciality2</option>
+              <option>Speciality3</option>
+            </select>
+            <div class="invalid-tooltip">Please select a Speciality.</div>
+            <div class="valid-tooltip">Looks good!</div>
+          </div>
+          <div class="col-md-4 position-relative">
+            <select class="form-select" id="validationTooltip04" required>
+              <option selected disabled value="">Location</option>
+              <option>Location1</option>
+              <option>Location2</option>
+              <option>Location3</option>
+            </select>
+            <div class="invalid-tooltip">Please select a Location.</div>
+            <div class="valid-tooltip">Looks good!</div>
+          </div>
+          <div class="col-md-4 position-relative">
+            <input
+              type="date"
+              class="form-control calendar-icon"
+              id="validationTooltip01"
+              placeholder="Date"
+              required
+            />
+          </div>
+          <div class="col-md-4 position-relative">
+            <select class="form-select" id="validationTooltip04" required>
+              <option selected disabled value="">City</option>
+              <option>City1</option>
+              <option>City2</option>
+              <option>City3</option>
+            </select>
+            <div class="invalid-tooltip">Please select a City</div>
+            <div class="valid-tooltip">Looks good!</div>
+          </div>
+          <div class="col-md-4 position-relative">
+            <select class="form-select" id="validationTooltip04" required>
+              <option selected disabled value="">Area</option>
+              <option>Area1</option>
+              <option>Area2</option>
+              <option>Area3</option>
+            </select>
+            <div class="invalid-tooltip">Please select an Area</div>
+            <div class="valid-tooltip">Looks good!</div>
+          </div>
+          <div class="col-md-4 position-relative">
+            <select class="form-select time" id="validationTooltip04" required>
+              <option selected disabled value="">Area</option>
+              <option>Area1</option>
+              <option>Area2</option>
+              <option>Area3</option>
+            </select>
+            <div class="invalid-tooltip">Please select an Area</div>
+            <div class="valid-tooltip">Looks good!</div>
+          </div>
+          <div class="col-12">
+            <button class="T-btn" type="submit">Make an Appointment</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- team start -->
+    <section class="team pb-5 position-relative">
+      <img
+        src="assets/img/half-yellow-circle.svg"
+        alt="pattern"
+        class="position-absolute start-0 top-50 half-yellow-circle"
+      />
+      <img
+        src="assets/img/pattern.svg"
+        alt="pattern"
+        class="position-absolute pattern start-0 top-50 translate-middle"
+      />
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="doctor-box position-relative">
+              <img src="assets/img/Eiad.webp" alt="Dr Eiad" />
+              <h3 class="ps-3">Dr. Eyad</h3>
+              <h5 class="ps-3">Chief Operations Officer</h5>
+              <div class="doctor-hover-box position-absolute text-center">
+                <div class="d-flex">
+                  <img
+                    src="assets/img/doctor-thumbnail.webp"
+                    alt="doctor"
+                    class="doctor-thumbnail"
+                  />
+                  <div class="bio ps-3 mb-4">
+                    <h4 class="name">Dr. Saied Alhabash</h4>
+                    <p class="status text-start">Available now</p>
+                  </div>
+                </div>
+                <div class="green-box text-white p-3">
+                  <p>Years of Experiernce</p>
+                  <p class="years">15</p>
+                  <p>Language Spoken</p>
+                  <div class="mt-2 mb-4">
+                    <span class="lang">EN</span>
+                    <span class="lang">AR</span>
+                  </div>
+                  <a href="doctor-profile.html" class="profile">view profile</a>
+                  <div
+                    class="d-flex justify-content-around align-items-center mt-3"
+                  >
+                    <p class="waiting m-0">waiting time</p>
+                    <p class="time m-0">30 mins</p>
+                    <img
+                      src="assets/img/ent.webp"
+                      alt="icon"
+                      class="spe-icon m-0"
+                    />
+                  </div>
+                </div>
+                <a href="Appointment.html" class="book-btn d-block">
+                  Make an Appointment</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="doctor-box position-relative">
+              <img src="assets/img/2.webp" alt="Dr Eiad" />
+              <h3 class="ps-3">Mr. Jaffar</h3>
+              <h5 class="ps-3">Marketing Management</h5>
+              <div class="doctor-hover-box position-absolute text-center">
+                <div class="d-flex">
+                  <img
+                    src="assets/img/doctor-thumbnail.webp"
+                    alt="doctor"
+                    class="doctor-thumbnail"
+                  />
+                  <div class="bio ps-3 mb-4">
+                    <h4 class="name">Dr. Saied Alhabash</h4>
+                    <p class="status text-start">Available now</p>
+                  </div>
+                </div>
+                <div class="green-box text-white p-3">
+                  <p>Years of Experiernce</p>
+                  <p class="years">15</p>
+                  <p>Language Spoken</p>
+                  <div class="mt-2 mb-4">
+                    <span class="lang">EN</span>
+                    <span class="lang">AR</span>
+                  </div>
+                  <a href="doctor-profile.html" class="profile">view profile</a>
+                  <div
+                    class="d-flex justify-content-around align-items-center mt-3"
+                  >
+                    <p class="waiting m-0">waiting time</p>
+                    <p class="time m-0">30 mins</p>
+                    <img
+                      src="assets/img/ent.webp"
+                      alt="icon"
+                      class="spe-icon m-0"
+                    />
+                  </div>
+                </div>
+                <a href="Appointment.html" class="book-btn d-block">
+                  Make an Appointment</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="doctor-box position-relative">
+              <img src="assets/img/3.webp" alt="Dr Eiad" />
+              <h3 class="ps-3">Dr. Saad</h3>
+              <h5 class="ps-3">Research Fellow</h5>
+              <div class="doctor-hover-box position-absolute text-center">
+                <div class="d-flex">
+                  <img
+                    src="assets/img/doctor-thumbnail.webp"
+                    alt="doctor"
+                    class="doctor-thumbnail"
+                  />
+                  <div class="bio ps-3 mb-4">
+                    <h4 class="name">Dr. Saied Alhabash</h4>
+                    <p class="status text-start">Available now</p>
+                  </div>
+                </div>
+                <div class="green-box text-white p-3">
+                  <p>Years of Experiernce</p>
+                  <p class="years">15</p>
+                  <p>Language Spoken</p>
+                  <div class="mt-2 mb-4">
+                    <span class="lang">EN</span>
+                    <span class="lang">AR</span>
+                  </div>
+                  <a href="doctor-profile.html" class="profile">view profile</a>
+                  <div
+                    class="d-flex justify-content-around align-items-center mt-3"
+                  >
+                    <p class="waiting m-0">waiting time</p>
+                    <p class="time m-0">30 mins</p>
+                    <img
+                      src="assets/img/ent.webp"
+                      alt="icon"
+                      class="spe-icon m-0"
+                    />
+                  </div>
+                </div>
+                <a href="Appointment.html" class="book-btn d-block">
+                  Make an Appointment</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="doctor-box position-relative">
+              <img src="assets/img/4.webp" alt="Dr Eiad" />
+              <h3 class="ps-3">Ms. Desiree</h3>
+              <h5 class="ps-3">Chief Governance Officer</h5>
+              <div class="doctor-hover-box position-absolute text-center">
+                <div class="d-flex">
+                  <img
+                    src="assets/img/doctor-thumbnail.webp"
+                    alt="doctor"
+                    class="doctor-thumbnail"
+                  />
+                  <div class="bio ps-3 mb-4">
+                    <h4 class="name">Dr. Saied Alhabash</h4>
+                    <p class="status text-start">Available now</p>
+                  </div>
+                </div>
+                <div class="green-box text-white p-3">
+                  <p>Years of Experiernce</p>
+                  <p class="years">15</p>
+                  <p>Language Spoken</p>
+                  <div class="mt-2 mb-4">
+                    <span class="lang">EN</span>
+                    <span class="lang">AR</span>
+                  </div>
+                  <a href="doctor-profile.html" class="profile">view profile</a>
+                  <div
+                    class="d-flex justify-content-around align-items-center mt-3"
+                  >
+                    <p class="waiting m-0">waiting time</p>
+                    <p class="time m-0">30 mins</p>
+                    <img
+                      src="assets/img/ent.webp"
+                      alt="icon"
+                      class="spe-icon m-0"
+                    />
+                  </div>
+                </div>
+                <a href="Appointment.html" class="book-btn d-block">
+                  Make an Appointment</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="doctor-box position-relative">
+              <img src="assets/img/5.webp" alt="Dr Eiad" />
+              <h3 class="ps-3">Dr. Saad</h3>
+              <h5 class="ps-3">Chief Governance Officer</h5>
+              <div class="doctor-hover-box position-absolute text-center">
+                <div class="d-flex">
+                  <img
+                    src="assets/img/doctor-thumbnail.webp"
+                    alt="doctor"
+                    class="doctor-thumbnail"
+                  />
+                  <div class="bio ps-3 mb-4">
+                    <h4 class="name">Dr. Saied Alhabash</h4>
+                    <p class="status text-start">Available now</p>
+                  </div>
+                </div>
+                <div class="green-box text-white p-3">
+                  <p>Years of Experiernce</p>
+                  <p class="years">15</p>
+                  <p>Language Spoken</p>
+                  <div class="mt-2 mb-4">
+                    <span class="lang">EN</span>
+                    <span class="lang">AR</span>
+                  </div>
+                  <a href="doctor-profile.html" class="profile">view profile</a>
+                  <div
+                    class="d-flex justify-content-around align-items-center mt-3"
+                  >
+                    <p class="waiting m-0">waiting time</p>
+                    <p class="time m-0">30 mins</p>
+                    <img
+                      src="assets/img/ent.webp"
+                      alt="icon"
+                      class="spe-icon m-0"
+                    />
+                  </div>
+                </div>
+                <a href="Appointment.html" class="book-btn d-block">
+                  Make an Appointment</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="doctor-box position-relative">
+              <img src="assets/img/Eiad.webp" alt="Dr Eiad" />
+              <h3 class="ps-3">Dr. Eyad</h3>
+              <h5 class="ps-3">Chief Operations Officer</h5>
+              <div class="doctor-hover-box position-absolute text-center">
+                <div class="d-flex">
+                  <img
+                    src="assets/img/doctor-thumbnail.webp"
+                    alt="doctor"
+                    class="doctor-thumbnail"
+                  />
+                  <div class="bio ps-3 mb-4">
+                    <h4 class="name">Dr. Saied Alhabash</h4>
+                    <p class="status text-start">Available now</p>
+                  </div>
+                </div>
+                <div class="green-box text-white p-3">
+                  <p>Years of Experiernce</p>
+                  <p class="years">15</p>
+                  <p>Language Spoken</p>
+                  <div class="mt-2 mb-4">
+                    <span class="lang">EN</span>
+                    <span class="lang">AR</span>
+                  </div>
+                  <a href="doctor-profile.html" class="profile">view profile</a>
+                  <div
+                    class="d-flex justify-content-around align-items-center mt-3"
+                  >
+                    <p class="waiting m-0">waiting time</p>
+                    <p class="time m-0">30 mins</p>
+                    <img
+                      src="assets/img/ent.webp"
+                      alt="icon"
+                      class="spe-icon m-0"
+                    />
+                  </div>
+                </div>
+                <a href="Appointment.html" class="book-btn d-block">
+                  Make an Appointment</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="doctor-box position-relative">
+              <img src="assets/img/2.webp" alt="Dr Eiad" />
+              <h3 class="ps-3">Mr. Jaffar</h3>
+              <h5 class="ps-3">Marketing Management</h5>
+              <div class="doctor-hover-box position-absolute text-center">
+                <div class="d-flex">
+                  <img
+                    src="assets/img/doctor-thumbnail.webp"
+                    alt="doctor"
+                    class="doctor-thumbnail"
+                  />
+                  <div class="bio ps-3 mb-4">
+                    <h4 class="name">Dr. Saied Alhabash</h4>
+                    <p class="status text-start">Available now</p>
+                  </div>
+                </div>
+                <div class="green-box text-white p-3">
+                  <p>Years of Experiernce</p>
+                  <p class="years">15</p>
+                  <p>Language Spoken</p>
+                  <div class="mt-2 mb-4">
+                    <span class="lang">EN</span>
+                    <span class="lang">AR</span>
+                  </div>
+                  <a href="doctor-profile.html" class="profile">view profile</a>
+                  <div
+                    class="d-flex justify-content-around align-items-center mt-3"
+                  >
+                    <p class="waiting m-0">waiting time</p>
+                    <p class="time m-0">30 mins</p>
+                    <img
+                      src="assets/img/ent.webp"
+                      alt="icon"
+                      class="spe-icon m-0"
+                    />
+                  </div>
+                </div>
+                <a href="Appointment.html" class="book-btn d-block">
+                  Make an Appointment</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="doctor-box position-relative">
+              <img src="assets/img/3.webp" alt="Dr Eiad" />
+              <h3 class="ps-3">Dr. Saad</h3>
+              <h5 class="ps-3">Research Fellow</h5>
+              <div class="doctor-hover-box position-absolute text-center">
+                <div class="d-flex">
+                  <img
+                    src="assets/img/doctor-thumbnail.webp"
+                    alt="doctor"
+                    class="doctor-thumbnail"
+                  />
+                  <div class="bio ps-3 mb-4">
+                    <h4 class="name">Dr. Saied Alhabash</h4>
+                    <p class="status text-start">Available now</p>
+                  </div>
+                </div>
+                <div class="green-box text-white p-3">
+                  <p>Years of Experiernce</p>
+                  <p class="years">15</p>
+                  <p>Language Spoken</p>
+                  <div class="mt-2 mb-4">
+                    <span class="lang">EN</span>
+                    <span class="lang">AR</span>
+                  </div>
+                  <a href="doctor-profile.html" class="profile">view profile</a>
+                  <div
+                    class="d-flex justify-content-around align-items-center mt-3"
+                  >
+                    <p class="waiting m-0">waiting time</p>
+                    <p class="time m-0">30 mins</p>
+                    <img
+                      src="assets/img/ent.webp"
+                      alt="icon"
+                      class="spe-icon m-0"
+                    />
+                  </div>
+                </div>
+                <a href="Appointment.html" class="book-btn d-block">
+                  Make an Appointment</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="view-all d-flex justify-content-center">
+              <a href="#" class="T-btn mt-4 d-block">View All DOCTORS</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- team end -->
+    <!--  Assistance -->
+    <section class="Assistance position-relative pt-3 mb-5 text-center">
+      <img
+        src="assets/img/pattern.svg"
+        alt="pattern"
+        class="position-absolute pattern start-0 top-50 img-fluid translate-middle"
+      />
+      <img
+        src="assets/img/pattern.svg"
+        alt="pattern"
+        class="position-absolute pattern start-0 top-100 img-fluid translate-middle"
+      />
+      <img
+        src="assets/img/pattern-circle.svg"
+        alt="pattern"
+        class="position-absolute top-100 start-100 img-fluid translate-middle"
+      />
+      <img src="assets/img/Assistance.png" alt="calender icon" />
+      <h2 class="title">Need Assistance?</h2>
+      <div class="d-flex justify-content-center pb-4">
+        <div class="box position-relative">
+          <img src="assets/img/assist1.jpg" alt="photo" class="img-fluid" />
+          <div
+            class="text-center position-absolute top-50 start-50 translate-middle"
+          >
+            <img
+              src="assets/img/panel-contact-icon.svg"
+              alt="contact icon"
+              class="pb-4"
+            />
+            <a href="tel:300400" class="tel green">Contact us on 300400</a>
+            <p>Tell us about your inquiry!</p>
+          </div>
+        </div>
+        <div class="box position-relative">
+          <img src="assets/img/assist2.jpg" alt="photo" class="img-fluid" />
+          <div
+            class="text-center position-absolute top-50 start-50 translate-middle"
+          >
+            <img
+              src="assets/img/panel-appointment-icon.svg"
+              alt="contact icon"
+              class="pb-4"
+            />
+            <a href="Appointment.html" class="text-white tel"
+              >Book An Appointment</a
+            >
+            <a href="Appointment.html">Get in touch</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="assets/img/logo-w.webp" alt="White logo" />
+            <p class="info">
+              MOH Approval: VW73177 - 20/11/2020 <br />
+              License no: 13LCXSQV-221220
+            </p>
+            <p class="time d-flex">
+              <img src="assets/img/clock.svg" alt="clock" class="pe-1" /> 8:00
+              am - 17:00 pm, Monday - Friday
+            </p>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-2">
+                <h5>about us</h5>
+                <ul>
+                  <li><a href="#"> Founder's Message</a></li>
+                  <li><a href="#"> Leadership Team</a></li>
+                  <li><a href="#"> Contact Us</a></li>
+                  <li><a href="#"> Locations</a></li>
+                  <li><a href="#"> Insurance Partners</a></li>
+                  <li><a href="#"> Testimonials</a></li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <h5 class="text-md-center">Departments</h5>
+                <div
+                  class="d-flex justify-content-between justify-content-md-around"
+                >
+                  <ul>
+                    <li><a href="#"> Tarabichi ENT</a></li>
+                    <li><a href="#"> Tarabichi Orthocare</a></li>
+                    <li><a href="#"> Tarabichi Eyecare</a></li>
+                    <li><a href="#"> Tarabichi Heartcare</a></li>
+                    <li><a href="#"> Tarabichi Urocare</a></li>
+                    <li><a href="#"> Tarabichi Surgery</a></li>
+                  </ul>
+                  <ul>
+                    <li><a href="#"> Tarabichi Joint Care</a></li>
+                    <li><a href="#"> Tarabichi Smile</a></li>
+                    <li><a href="#"> Tarabichi ENT Care</a></li>
+                    <li><a href="#"> Tarabichi Bloom</a></li>
+                    <li><a href="#"> Tarabichi Vinoda</a></li>
+                    <li><a href="#"> Tarabichi Spine</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <h5>Site Information & Policies</h5>
+                <ul>
+                  <li><a href="#">Terms & Conditions</a></li>
+                  <li><a href="#"> Website forms of Use</a></li>
+                  <li><a href="#"> Privacy Policy</a></li>
+                  <li><a href="#"> Feedback</a></li>
+                  <li><a href="#"> Sitemap</a></li>
+                  <li><a href="#"> Non-Discrimination Policy</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row pt-5 pb-4 justify-content-between">
+          <div class="col-md-6">
+            <h4 class="social-h">Follow Us</h4>
+            <div class="social">
+              <a href="#"
+                ><img src="assets/img/facebook.svg" alt="facebook"
+              /></a>
+              <a href="#"
+                ><img src="assets/img/instagram.svg" alt="instagram"
+              /></a>
+              <a href="#"
+                ><img src="assets/img/linkedin.svg" alt="linkedin"
+              /></a>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <h4 class="Subscribe pt-4 pt-md-0">
+              Subscribe to Tarabichi Newsletter
+            </h4>
+            <form action="#">
+              <div class="input-group mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Your Email"
+                />
+                <button class="btn" type="submit">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright text-center">
+        <p class="m-0 pb-2 pt-1">
+          © 2022 TARABICHI STAMMBERGER DAYCARE SINUS CENTER. All rights
+          reserved.
+        </p>
+      </div>
+    </footer>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
