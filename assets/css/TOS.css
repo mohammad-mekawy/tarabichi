@@ -269,7 +269,7 @@ body {
   margin: 20px 0;
 }
 
-.TOS .T-heading:hover::after {
+.TOS .info:hover .T-heading::after {
   width: 100%;
 }
 
@@ -278,6 +278,7 @@ body {
   line-height: 1.74;
   color: #333;
   text-align: justify;
+  margin-bottom: 70px;
 }
 
 .locations {

@@ -124,9 +124,13 @@
             transition: all 500ms;
             margin: 20px 0;
         }
+    }
+    .info{
         &:hover{
-            &::after{
-                width: 100%;
+            .T-heading{
+                &::after{
+                    width: 100%;
+                }
             }
         }
     }
@@ -134,7 +138,8 @@
         font-size: 19px;
         line-height: 1.74;
         color: #333;
-        text-align: justify
+        text-align: justify;
+        margin-bottom: 70px
     }
 }
 // TOS end
