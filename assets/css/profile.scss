@@ -2,7 +2,7 @@
 
 /* hero start */
 .hero{
-    background-image: url(../img/pannel-banner.jpg);
+    background-image: url(../img/profile-banner.webp);
     background-color: rgba(0, 0, 0, 0.35);
     background-blend-mode: multiply;
     background-position: center center;
@@ -54,8 +54,222 @@
     }
 }
 /* hero end */
+// profile start
+.profile{
+    .T-nav{
+        box-shadow: 0 8px 45px 0 rgba(0, 0, 0, 0.05);
+        background-color: #fff;
+        padding: 40px;
+        border-radius: 10px;
+        a{
+            display: block;
+            width: 23%;
+            @media (max-width:786px) {
+                width: 90%;
+                margin-bottom: 20px;
+            }
+            text-decoration: none;
+            opacity: 0.75;
+            font-family: BebasNeue;
+            font-size: 18px;
+            line-height: 1.67;
+            color: #000;
+            border-radius: 10px;
+            border: solid 1px #e1e1e1;
+            transition: all 500ms;
+            &:hover{
+                border: solid 2px var(--green);
+            }     
+        }
+        .insurance{
+            width: 48px;
+        }
+        .book-btn{
+            color: #fff;
+            background-color: var(--mid-green);
+            &:hover{
+                color: var(--mid-green);
+                background-color: #fff;
+            }
+        }
+    }
+    .bio{
+        .name{
+            font-family: BebasNeue;
+            font-size: 29px;
+            line-height: 1.66;
+            color: #2d2d2d;
+            width: fit-content;
+            &::after{
+                content: "";
+                width: 30%;
+                height: 3px;
+                background-color: var(--mid-green);
+                display: block;
+                transition: all 500ms;
+            }
+            &:hover{
+                &::after{
+                    width: 100%;
+                }
+            }
+        }
+        .spe{
+            font-size: 14px;
+            color: #848484;
+        }
+        .T-heading{
+            font-family: BebasNeue;
+            font-size: 38px;
+            line-height: 0.63;
+            color: var(--mid-green);
+            width: fit-content;
+            &::after{
+                content: "";
+                width: 30%;
+                height: 3px;
+                background-color: var(--mid-green);
+                display: block;
+                transition: all 500ms;
+                margin: 20px 0 40px;
+            }
+            &:hover{
+                &::after{
+                    width: 100%;
+                }
+            }
+        }
+        .T-text{
+            font-size: 19px;
+            line-height: 1.74;
+            color: #333;
+            text-align: justify
+        }
+        .side-bar{
+            ul{
+                width: fit-content;
+                li{
+                    font-size: 18px;
+                    color: #7d7d7d;
+                    &:first-child{
+                        &::before{
+                            content: "";
+                            width: 5px;
+                            height: 5px;
+                            background-color: var(--mid-green);
+                            display: inline-block;
+                            border-radius: 50%;
+                            vertical-align: middle;
+                        }
+                    }
+                    &:not(:first-child){
+                        border-bottom: 1px solid #eee;
+                        padding: 12px 0;
+                    }
+                    span{
+                        color: var(--mid-green);
+                        text-decoration: underline;
+                        font-weight: 600;
+                        font-size: 16px;
+                        text-transform: uppercase;
+                        .time{
+                            font-size: 18px;
+                            color: #7d7d7d;
+                            font-weight: normal;
+                        }
+                    }
+                }
+            }
+            .book-btn{
+                color: var(--mid-green);
+                border: 2px solid var(--mid-green);
+                border-radius: 4px;
+                font-family: BebasNeue;
+                font-size: 18px;
+                letter-spacing: 1.06px;
+                transition: all 500ms;
+                padding: 8px 0;
+                text-decoration: none;
+                width: 55%;
+                margin: 40px auto 0;
+                &:hover{
+                    background-color: var(--mid-green);
+                    color: #fff;
+                }
+            }
+        }
+        .side-bar2{
+            ul{
+                width: 70%;
+            }
+            li:not(:first-child){
+                display: flex;
+                justify-content: space-between;
+                span{
+                    text-decoration: none !important;
+                }
+            }
+            
+            a{
+                font-family: BebasNeue;
+                font-size: 13px;
+                text-decoration: none;
+                color: var(--mid-green);
+                border: 2px solid var(--mid-green);
+                border-radius: 4px;
+                padding: 4px 12px;
+                transition: all 500ms;
+                &:hover{
+                    background-color: var(--mid-green);
+                    color: #fff;
+                }
+            }
+        }
+        ul{
+            list-style: none;
+            padding-left: 0;
+        }
+        ul.T-text{
+            border-left: 1px solid #979797;
+            padding-left: 20px;
+            li{
+                position: relative;
+                &::before{
+                    content: "";
+                width: 8px;
+                height: 9px;
+                border: 1px solid var(--mid-green);
+                display: inline-block;
+                border-radius: 50%;
+                vertical-align: middle;
+                position: absolute;
+                left: -24px;
+                top: 12px;
+                }
+            }
+        }
+    }
+    .T-btn{
+        width: fit-content;
+        font-size: 14px;
+        font-weight: 500;
+        text-decoration: none;
+        text-transform: uppercase;
+        border-radius: 5px;
+        padding: 6px 6%;
+        transition: all 500ms;
+        background-color: transparent;
+        color: var(--mid-green);
+        border: 2px solid var(--mid-green);
+        &:hover{
+            border: 2px solid transparent;
+            background-color: var(--mid-green);
+            color: #fff;
+        }
+    }
+}
 
-
+// profile end
 // locations
 @import "locations";
 // footer

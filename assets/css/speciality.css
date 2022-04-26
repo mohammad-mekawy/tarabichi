@@ -81,6 +81,11 @@ body {
   z-index: -1;
 }
 
+.abso-0-0 {
+  left: -315px;
+  top: -320px;
+}
+
 /* hero start */
 .hero {
   background-image: url(../img/inst-banner.webp);
