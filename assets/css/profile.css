@@ -266,7 +266,6 @@ body {
 .profile .bio .T-heading {
   font-family: BebasNeue;
   font-size: 38px;
-  line-height: 0.63;
   color: var(--mid-green);
   width: -webkit-fit-content;
   width: -moz-fit-content;

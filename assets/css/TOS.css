@@ -212,6 +212,7 @@ body {
   background-color: transparent;
   color: var(--mid-green);
   border: 3px solid var(--mid-green);
+  height: 100%;
 }
 
 .TOS .T-tab:hover {
@@ -251,7 +252,6 @@ body {
 .TOS .T-heading {
   font-family: BebasNeue;
   font-size: 38px;
-  line-height: 0.63;
   color: var(--mid-green);
   width: -webkit-fit-content;
   width: -moz-fit-content;
