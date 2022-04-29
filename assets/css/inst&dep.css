@@ -204,12 +204,23 @@ body {
   transition: all 500ms;
   color: #fff;
   margin: 0 3px;
+  width: 100%;
 }
 
 .Institutes .T-tab:hover {
   background-color: transparent;
   color: var(--mid-green);
   border: 3px solid var(--mid-green);
+}
+
+.Institutes .nav-link.active {
+  background-color: transparent;
+  color: var(--mid-green);
+  border: 3px solid var(--mid-green);
+}
+
+.Institutes .nav-item {
+  width: 24%;
 }
 
 .Institutes .book-btn {

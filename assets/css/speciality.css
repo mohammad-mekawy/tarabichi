@@ -348,6 +348,10 @@ body {
   overflow-x: clip;
 }
 
+.team a {
+  text-decoration: none;
+}
+
 .team .half-yellow-circle {
   -webkit-transform: translateX(-50%) rotateY(180deg);
           transform: translateX(-50%) rotateY(180deg);

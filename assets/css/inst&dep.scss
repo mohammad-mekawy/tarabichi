@@ -73,11 +73,20 @@
         transition: all 500ms;
         color: #fff;
         margin: 0 3px;
+        width: 100%;
         &:hover{
             background-color: transparent;
             color: var(--mid-green);
             border: 3px solid var(--mid-green);
         }
+    }
+    .nav-link.active{
+        background-color: transparent;
+        color: var(--mid-green);
+        border: 3px solid var(--mid-green);
+    }
+    .nav-item{
+       width: 24%;
     }
     .book-btn{
         font-family: BebasNeue;
