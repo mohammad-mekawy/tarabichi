@@ -57,7 +57,9 @@
 
 // speciality start
 .speciality{
-    
+    .nav-tabs{
+        border-bottom: 0;
+    }
     a{
         text-decoration: none;
     }
@@ -69,62 +71,68 @@
         text-transform: uppercase;
         border-radius: 5px;
         width: 100%;
-        height: 40px;
-        display: block;
-        line-height: 35px;
         transition: all 500ms;
         background-color: transparent;
         color: var(--mid-green);
         border: 3px solid var(--mid-green);
+        height: 100%;
         &:hover{
             background-color: var(--mid-green);
             border: 3px solid transparent;
             color: #fff;
         }
     }
-    .nav{
-        margin-bottom: 30px;
+    .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+        color: #fff;
+        background-color: var(--mid-green);
+        border: 3px solid transparent;
     }
-    .nav-link{
-        color: #7d7d7d;
-        background-color: transparent;
-        border: 0;
-        border-bottom: 1px solid #eee;                
-        margin: 0 0 12px 8px;
-        font-family: BebasNeue;
-        font-size: 18px;
-        line-height: 1.56;
-        text-align: left;
-        transition: all 500ms;
-        position: relative;
-        &:hover{
-            color: var(--mid-green);
-            text-decoration: underline;
+    .nav-item{
+        width: 30%;
+        margin-bottom: 20px;
+    }
+    .tab-content{
+        .nav-link{
+            color: #7d7d7d;
+            background-color: transparent;
+            border: 0;
+            border-bottom: 1px solid #eee;                
+            margin: 0 0 12px 8px;
+            font-family: BebasNeue;
+            font-size: 18px;
+            line-height: 1.56;
+            text-align: left;
+            transition: all 500ms;
+            position: relative;
+            &:hover{
+                color: var(--mid-green);
+                text-decoration: underline;
+                &::before{
+                    background-color: var(--mid-green);
+                    width: 8px;
+                height: 8px;
+                }
+            }
             &::before{
+                content: "";
                 background-color: var(--mid-green);
+                display: inline-block;
                 width: 8px;
-            height: 8px;
+                height: 8px;
+                border-radius: 50%;
+                border: 2px solid var(--mid-green);
+                transition: all 500ms;
+                opacity: 0;
             }
         }
-        &::before{
-            content: "";
-            background-color: var(--mid-green);
-            display: inline-block;
-            width: 8px;
-            height: 8px;
-            border-radius: 50%;
-            border: 2px solid var(--mid-green);
-            transition: all 500ms;
-            opacity: 0;
-        }
-    }
-    .nav-link.active{
-        color: var(--mid-green);
-        text-decoration: underline;
-        background-color: transparent;
-        &::before{
-            opacity: 1;
-            margin-right: 5px;
+        .nav-link.active{
+            color: var(--mid-green);
+            text-decoration: underline;
+            background-color: transparent;
+            &::before{
+                opacity: 1;
+                margin-right: 5px;
+            }
         }
     }
     .book-btn{
@@ -346,7 +354,6 @@
     }
     }
 }
-
 // footer
 @import "locations";
 @import "footer"

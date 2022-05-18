@@ -101,7 +101,8 @@
     </section>
 
     <!-- speciality start -->
-    <section class="speciality position-relative">
+    <!-- kiko -->
+    <section class="TOS speciality position-relative">
       <img
         src="assets/img/half-yellow-circle.svg"
         alt="pattern"
@@ -115,37 +116,101 @@
       <img
         src="assets/img/pattern-circle.svg"
         alt="pattern"
-        class="position-absolute top-0 start-0 translate-middle zn-1"
+        class="position-absolute abso-0-0 zn-1"
       />
       <div class="container">
         <div class="row mt-5 mb-5 align-items-center">
           <div class="col-md-8 pb-5 pb-md-0">
-            <div class="row row-cols-3 g-2">
-              <div class="p-3">
-                <a href="#" class="T-tab text-center">Audiology</a>
-              </div>
-              <div class="p-3">
-                <a href="#" class="T-tab text-center">Stapedectomy</a>
-              </div>
-              <div class="p-3">
-                <a href="#" class="T-tab text-center">Endoscopic Ear Surgery</a>
-              </div>
-            </div>
-            <div class="row row-cols-3 g-2">
-              <div class="p-3">
-                <a href="#" class="T-tab text-center">Rahinopalsty</a>
-              </div>
-              <div class="p-3">
-                <a href="#" class="T-tab text-center"
-                  >Spetoplasty & Turbinectomy</a
+            <ul
+              class="nav nav-tabs justify-content-between"
+              id="myTab"
+              role="tablist"
+            >
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link active T-tab text-center"
+                  id="Audiology-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#Audiology"
+                  type="button"
+                  role="tab"
+                  aria-controls="Audiology"
+                  aria-selected="true"
                 >
-              </div>
-              <div class="p-3">
-                <a href="#" class="T-tab text-center"
-                  >Oral and Maxillofacial surgery</a
+                  Audiology
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link T-tab text-center"
+                  id="Stapedectomy-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#Stapedectomy"
+                  type="button"
+                  role="tab"
+                  aria-controls="Stapedectomy"
+                  aria-selected="false"
                 >
-              </div>
-            </div>
+                  Stapedectomy
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link T-tab text-center"
+                  id="Endoscopic-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#Endoscopic"
+                  type="button"
+                  role="tab"
+                  aria-controls="Endoscopic"
+                  aria-selected="false"
+                >
+                  Endoscopic Ear Surgery
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link T-tab text-center"
+                  id="Rahinopalsty-tab2"
+                  data-bs-toggle="tab"
+                  data-bs-target="#Rahinopalsty"
+                  type="button"
+                  role="tab"
+                  aria-controls="Rahinopalsty"
+                  aria-selected="false"
+                >
+                  Rahinopalsty
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link T-tab text-center"
+                  id="Spetoplasty-tab3"
+                  data-bs-toggle="tab"
+                  data-bs-target="#Spetoplasty"
+                  type="button"
+                  role="tab"
+                  aria-controls="Spetoplasty"
+                  aria-selected="false"
+                >
+                  Spetoplasty & Turbinectomy
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link T-tab text-center"
+                  id="Oraltab4"
+                  data-bs-toggle="tab"
+                  data-bs-target="#Oral"
+                  type="button"
+                  role="tab"
+                  aria-controls="Oral"
+                  aria-selected="false"
+                >
+                  Oral and Maxillofacial surgery
+                </button>
+              </li>
+            </ul>
           </div>
           <div
             class="col-md-4 d-flex justify-content-center justify-content-md-end"
@@ -156,243 +221,1539 @@
           </div>
         </div>
         <div class="row">
-          <div class="d-md-flex align-items-start">
+          <div class="tab-content" id="myTabContent">
             <div
-              class="nav flex-column nav-pills me-3 position-relative col-md-3 pt-5"
-              id="v-pills-tab"
-              role="tablist"
-              aria-orientation="vertical"
+              class="tab-pane fade show active"
+              id="Audiology"
+              role="tabpanel"
+              aria-labelledby="Audiology-tab"
             >
-              <button
-                class="nav-link active"
-                id="v-pills-about-tab"
-                data-bs-toggle="pill"
-                data-bs-target="#v-pills-about"
-                type="button"
-                role="tab"
-                aria-controls="v-pills-about"
-                aria-selected="true"
-              >
-                ABOUT
-              </button>
-              <button
-                class="nav-link"
-                id="v-pills-INDICATIONS-tab"
-                data-bs-toggle="pill"
-                data-bs-target="#v-pills-INDICATIONS"
-                type="button"
-                role="tab"
-                aria-controls="v-pills-INDICATIONS"
-                aria-selected="true"
-              >
-                INDICATIONS
-              </button>
-              <button
-                class="nav-link"
-                id="v-pills-RECOVERY-tab"
-                data-bs-toggle="pill"
-                data-bs-target="#v-pills-RECOVERY"
-                type="button"
-                role="tab"
-                aria-controls="v-pills-RECOVERY"
-                aria-selected="true"
-              >
-                RECOVERY PHASE
-              </button>
-              <button
-                class="nav-link"
-                id="v-pills-POST-tab"
-                data-bs-toggle="pill"
-                data-bs-target="#v-pills-POST"
-                type="button"
-                role="tab"
-                aria-controls="v-pills-POST"
-                aria-selected="true"
-              >
-                POST-SURGERY
-              </button>
-              <button
-                class="nav-link"
-                id="v-pills-FAQ-tab"
-                data-bs-toggle="pill"
-                data-bs-target="#v-pills-FAQ"
-                type="button"
-                role="tab"
-                aria-controls="v-pills-FAQ"
-                aria-selected="true"
-              >
-                FAQ
-              </button>
+              <div class="row">
+                <div class="d-md-flex align-items-start">
+                  <div
+                    class="nav flex-column nav-pills me-3 position-relative col-md-3 pt-5"
+                    id="v-pills-tab"
+                    role="tablist"
+                    aria-orientation="vertical"
+                  >
+                    <button
+                      class="nav-link active"
+                      id="v-pills-about-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#v-pills-about"
+                      type="button"
+                      role="tab"
+                      aria-controls="v-pills-about"
+                      aria-selected="true"
+                    >
+                      ABOUT
+                    </button>
+                    <button
+                      class="nav-link"
+                      id="v-pills-INDICATIONS-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#v-pills-INDICATIONS"
+                      type="button"
+                      role="tab"
+                      aria-controls="v-pills-INDICATIONS"
+                      aria-selected="true"
+                    >
+                      INDICATIONS
+                    </button>
+                    <button
+                      class="nav-link"
+                      id="v-pills-RECOVERY-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#v-pills-RECOVERY"
+                      type="button"
+                      role="tab"
+                      aria-controls="v-pills-RECOVERY"
+                      aria-selected="true"
+                    >
+                      RECOVERY PHASE
+                    </button>
+                    <button
+                      class="nav-link"
+                      id="v-pills-POST-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#v-pills-POST"
+                      type="button"
+                      role="tab"
+                      aria-controls="v-pills-POST"
+                      aria-selected="true"
+                    >
+                      POST-SURGERY
+                    </button>
+                    <button
+                      class="nav-link"
+                      id="v-pills-FAQ-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#v-pills-FAQ"
+                      type="button"
+                      role="tab"
+                      aria-controls="v-pills-FAQ"
+                      aria-selected="true"
+                    >
+                      FAQ
+                    </button>
 
-              <a
-                href="Appointment.html"
-                class="book-btn text-center position-absolute"
-                >Book an appointment</a
-              >
+                    <a
+                      href="Appointment.html"
+                      class="book-btn text-center position-absolute"
+                      >Book an appointment</a
+                    >
+                  </div>
+                  <div class="tab-content" id="v-pills-tabContent">
+                    <div
+                      class="tab-pane fade show active"
+                      id="v-pills-about"
+                      role="tabpanel"
+                      aria-labelledby="v-pills-about-tab"
+                    >
+                      <div class="row row-book">
+                        <div class="col-md-7">
+                          <div class="brief">
+                            <a href="#" class="title pt-5"
+                              >Ear & Sinus -Stapedectomy</a
+                            >
+                            <div class="desc pt-3 pb-4">
+                              Stapedectomy is a surgical procedure carried out
+                              to replace the innermost bone (stapes) of the
+                              middle ear with prosthesis. This procedure is
+                              carried out to improve the progressive hearing
+                              loss in otosclerotic patients, a condition in
+                              which spongy bone hardens around the base of the
+                              stapes. SStapedectomy is a surgical procedure
+                              carried out to replace the innermost bone (stapes)
+                              of the middle ear with…
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-5 text-end">
+                          <img
+                            src="assets/img/woman-patient-medical-office-doctor-medical-mask-lor-checks-woman-ears.webp"
+                            alt="book cover"
+                            class="img-fluid"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="v-pills-INDICATIONS"
+                      role="tabpanel"
+                      aria-labelledby="v-pills-INDICATIONS-tab"
+                    >
+                      <div class="row row-book">
+                        <div class="col-md-7">
+                          <div class="brief">
+                            <a href="#" class="title pt-5"
+                              >Ear & Sinus -Stapedectomy</a
+                            >
+                            <div class="desc pt-3 pb-4">
+                              Stapedectomy is a surgical procedure carried out
+                              to replace the innermost bone (stapes) of the
+                              middle ear with prosthesis. This procedure is
+                              carried out to improve the progressive hearing
+                              loss in otosclerotic patients, a condition in
+                              which spongy bone hardens around the base of the
+                              stapes. SStapedectomy is a surgical procedure
+                              carried out to replace the innermost bone (stapes)
+                              of the middle ear with…
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-5 text-end">
+                          <img
+                            src="assets/img/woman-patient-medical-office-doctor-medical-mask-lor-checks-woman-ears.webp"
+                            alt="book cover"
+                            class="img-fluid"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="v-pills-RECOVERY"
+                      role="tabpanel"
+                      aria-labelledby="v-pills-RECOVERY-tab"
+                    >
+                      <div class="row row-book">
+                        <div class="col-md-7">
+                          <div class="brief">
+                            <a href="#" class="title pt-5"
+                              >Ear & Sinus -Stapedectomy</a
+                            >
+                            <div class="desc pt-3 pb-4">
+                              Stapedectomy is a surgical procedure carried out
+                              to replace the innermost bone (stapes) of the
+                              middle ear with prosthesis. This procedure is
+                              carried out to improve the progressive hearing
+                              loss in otosclerotic patients, a condition in
+                              which spongy bone hardens around the base of the
+                              stapes. SStapedectomy is a surgical procedure
+                              carried out to replace the innermost bone (stapes)
+                              of the middle ear with…
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-5 text-end">
+                          <img
+                            src="assets/img/woman-patient-medical-office-doctor-medical-mask-lor-checks-woman-ears.webp"
+                            alt="book cover"
+                            class="img-fluid"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="v-pills-POST"
+                      role="tabpanel"
+                      aria-labelledby="v-pills-POST-tab"
+                    >
+                      <div class="row row-book">
+                        <div class="col-md-7">
+                          <div class="brief">
+                            <a href="#" class="title pt-5"
+                              >Ear & Sinus -Stapedectomy</a
+                            >
+                            <div class="desc pt-3 pb-4">
+                              Stapedectomy is a surgical procedure carried out
+                              to replace the innermost bone (stapes) of the
+                              middle ear with prosthesis. This procedure is
+                              carried out to improve the progressive hearing
+                              loss in otosclerotic patients, a condition in
+                              which spongy bone hardens around the base of the
+                              stapes. SStapedectomy is a surgical procedure
+                              carried out to replace the innermost bone (stapes)
+                              of the middle ear with…
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-5 text-end">
+                          <img
+                            src="assets/img/woman-patient-medical-office-doctor-medical-mask-lor-checks-woman-ears.webp"
+                            alt="book cover"
+                            class="img-fluid"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="v-pills-FAQ"
+                      role="tabpanel"
+                      aria-labelledby="v-pills-FAQ-tab"
+                    >
+                      <div class="row row-book">
+                        <div class="col-md-7">
+                          <div class="brief">
+                            <a href="#" class="title pt-5"
+                              >Ear & Sinus -Stapedectomy</a
+                            >
+                            <div class="desc pt-3 pb-4">
+                              Stapedectomy is a surgical procedure carried out
+                              to replace the innermost bone (stapes) of the
+                              middle ear with prosthesis. This procedure is
+                              carried out to improve the progressive hearing
+                              loss in otosclerotic patients, a condition in
+                              which spongy bone hardens around the base of the
+                              stapes. SStapedectomy is a surgical procedure
+                              carried out to replace the innermost bone (stapes)
+                              of the middle ear with…
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-5 text-end">
+                          <img
+                            src="assets/img/woman-patient-medical-office-doctor-medical-mask-lor-checks-woman-ears.webp"
+                            alt="book cover"
+                            class="img-fluid"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="tab-content" id="v-pills-tabContent">
-              <div
-                class="tab-pane fade show active"
-                id="v-pills-about"
-                role="tabpanel"
-                aria-labelledby="v-pills-about-tab"
-              >
-                <div class="row row-book">
-                  <div class="col-md-7">
-                    <div class="brief">
-                      <a href="#" class="title pt-5"
-                        >Ear & Sinus -Stapedectomy</a
-                      >
-                      <div class="desc pt-3 pb-4">
-                        Stapedectomy is a surgical procedure carried out to
-                        replace the innermost bone (stapes) of the middle ear
-                        with prosthesis. This procedure is carried out to
-                        improve the progressive hearing loss in otosclerotic
-                        patients, a condition in which spongy bone hardens
-                        around the base of the stapes. SStapedectomy is a
-                        surgical procedure carried out to replace the innermost
-                        bone (stapes) of the middle ear with…
+            <div
+              class="tab-pane fade"
+              id="Stapedectomy"
+              role="tabpanel"
+              aria-labelledby="Stapedectomy-tab"
+            >
+              <div class="row">
+                <div class="d-md-flex align-items-start">
+                  <div
+                    class="nav flex-column nav-pills me-3 position-relative col-md-3 pt-5"
+                    id="v-pills-tab2"
+                    role="tablist"
+                    aria-orientation="vertical"
+                  >
+                    <button
+                      class="nav-link active"
+                      id="v-pills-about2-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#v-pills-about2"
+                      type="button"
+                      role="tab"
+                      aria-controls="v-pills-about2"
+                      aria-selected="true"
+                    >
+                      ABOUT
+                    </button>
+                    <button
+                      class="nav-link"
+                      id="v-pills-INDICATIONS2-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#v-pills-INDICATIONS2"
+                      type="button"
+                      role="tab"
+                      aria-controls="v-pills-INDICATIONS2"
+                      aria-selected="true"
+                    >
+                      INDICATIONS
+                    </button>
+                    <button
+                      class="nav-link"
+                      id="v-pills-RECOVERY2-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#v-pills-RECOVERY2"
+                      type="button"
+                      role="tab"
+                      aria-controls="v-pills-RECOVERY2"
+                      aria-selected="true"
+                    >
+                      RECOVERY PHASE
+                    </button>
+                    <button
+                      class="nav-link"
+                      id="v-pills-POST2-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#v-pills-POST2"
+                      type="button"
+                      role="tab"
+                      aria-controls="v-pills-POST2"
+                      aria-selected="true"
+                    >
+                      POST-SURGERY
+                    </button>
+                    <button
+                      class="nav-link"
+                      id="v-pills-FAQ2-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#v-pills-FAQ2"
+                      type="button"
+                      role="tab"
+                      aria-controls="v-pills-FAQ2"
+                      aria-selected="true"
+                    >
+                      FAQ
+                    </button>
+
+                    <a
+                      href="Appointment.html"
+                      class="book-btn text-center position-absolute"
+                      >Book an appointment</a
+                    >
+                  </div>
+                  <div class="tab-content" id="v-pills-tabContent2">
+                    <div
+                      class="tab-pane fade show active"
+                      id="v-pills-about2"
+                      role="tabpanel"
+                      aria-labelledby="v-pills-about2-tab"
+                    >
+                      <div class="row row-book">
+                        <div class="col-md-7">
+                          <div class="brief">
+                            <a href="#" class="title pt-5"
+                              >Ear & Sinus -Stapedectomy</a
+                            >
+                            <div class="desc pt-3 pb-4">
+                              Stapedectomy is a surgical procedure carried out
+                              to replace the innermost bone (stapes) of the
+                              middle ear with prosthesis. This procedure is
+                              carried out to improve the progressive hearing
+                              loss in otosclerotic patients, a condition in
+                              which spongy bone hardens around the base of the
+                              stapes. SStapedectomy is a surgical procedure
+                              carried out to replace the innermost bone (stapes)
+                              of the middle ear with…
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-5 text-end">
+                          <img
+                            src="assets/img/woman-patient-medical-office-doctor-medical-mask-lor-checks-woman-ears.webp"
+                            alt="book cover"
+                            class="img-fluid"
+                          />
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="col-md-5 text-end">
-                    <img
-                      src="assets/img/woman-patient-medical-office-doctor-medical-mask-lor-checks-woman-ears.webp"
-                      alt="book cover"
-                      class="img-fluid"
-                    />
+                    <div
+                      class="tab-pane fade"
+                      id="v-pills-INDICATIONS2"
+                      role="tabpanel"
+                      aria-labelledby="v-pills-INDICATIONS2-tab"
+                    >
+                      <div class="row row-book">
+                        <div class="col-md-7">
+                          <div class="brief">
+                            <a href="#" class="title pt-5"
+                              >Ear & Sinus -Stapedectomy</a
+                            >
+                            <div class="desc pt-3 pb-4">
+                              Stapedectomy is a surgical procedure carried out
+                              to replace the innermost bone (stapes) of the
+                              middle ear with prosthesis. This procedure is
+                              carried out to improve the progressive hearing
+                              loss in otosclerotic patients, a condition in
+                              which spongy bone hardens around the base of the
+                              stapes. SStapedectomy is a surgical procedure
+                              carried out to replace the innermost bone (stapes)
+                              of the middle ear with…
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-5 text-end">
+                          <img
+                            src="assets/img/woman-patient-medical-office-doctor-medical-mask-lor-checks-woman-ears.webp"
+                            alt="book cover"
+                            class="img-fluid"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="v-pills-RECOVERY2"
+                      role="tabpanel"
+                      aria-labelledby="v-pills-RECOVERY2-tab"
+                    >
+                      <div class="row row-book">
+                        <div class="col-md-7">
+                          <div class="brief">
+                            <a href="#" class="title pt-5"
+                              >Ear & Sinus -Stapedectomy</a
+                            >
+                            <div class="desc pt-3 pb-4">
+                              Stapedectomy is a surgical procedure carried out
+                              to replace the innermost bone (stapes) of the
+                              middle ear with prosthesis. This procedure is
+                              carried out to improve the progressive hearing
+                              loss in otosclerotic patients, a condition in
+                              which spongy bone hardens around the base of the
+                              stapes. SStapedectomy is a surgical procedure
+                              carried out to replace the innermost bone (stapes)
+                              of the middle ear with…
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-5 text-end">
+                          <img
+                            src="assets/img/woman-patient-medical-office-doctor-medical-mask-lor-checks-woman-ears.webp"
+                            alt="book cover"
+                            class="img-fluid"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="v-pills-POST2"
+                      role="tabpanel"
+                      aria-labelledby="v-pills-POST2-tab"
+                    >
+                      <div class="row row-book">
+                        <div class="col-md-7">
+                          <div class="brief">
+                            <a href="#" class="title pt-5"
+                              >Ear & Sinus -Stapedectomy</a
+                            >
+                            <div class="desc pt-3 pb-4">
+                              Stapedectomy is a surgical procedure carried out
+                              to replace the innermost bone (stapes) of the
+                              middle ear with prosthesis. This procedure is
+                              carried out to improve the progressive hearing
+                              loss in otosclerotic patients, a condition in
+                              which spongy bone hardens around the base of the
+                              stapes. SStapedectomy is a surgical procedure
+                              carried out to replace the innermost bone (stapes)
+                              of the middle ear with…
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-5 text-end">
+                          <img
+                            src="assets/img/woman-patient-medical-office-doctor-medical-mask-lor-checks-woman-ears.webp"
+                            alt="book cover"
+                            class="img-fluid"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="v-pills-FAQ2"
+                      role="tabpanel"
+                      aria-labelledby="v-pills-FAQ2-tab"
+                    >
+                      <div class="row row-book">
+                        <div class="col-md-7">
+                          <div class="brief">
+                            <a href="#" class="title pt-5"
+                              >Ear & Sinus -Stapedectomy</a
+                            >
+                            <div class="desc pt-3 pb-4">
+                              Stapedectomy is a surgical procedure carried out
+                              to replace the innermost bone (stapes) of the
+                              middle ear with prosthesis. This procedure is
+                              carried out to improve the progressive hearing
+                              loss in otosclerotic patients, a condition in
+                              which spongy bone hardens around the base of the
+                              stapes. SStapedectomy is a surgical procedure
+                              carried out to replace the innermost bone (stapes)
+                              of the middle ear with…
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-5 text-end">
+                          <img
+                            src="assets/img/woman-patient-medical-office-doctor-medical-mask-lor-checks-woman-ears.webp"
+                            alt="book cover"
+                            class="img-fluid"
+                          />
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div
-                class="tab-pane fade"
-                id="v-pills-INDICATIONS"
-                role="tabpanel"
-                aria-labelledby="v-pills-INDICATIONS-tab"
-              >
-                <div class="row row-book">
-                  <div class="col-md-7">
-                    <div class="brief">
-                      <a href="#" class="title pt-5"
-                        >Ear & Sinus -Stapedectomy</a
-                      >
-                      <div class="desc pt-3 pb-4">
-                        Stapedectomy is a surgical procedure carried out to
-                        replace the innermost bone (stapes) of the middle ear
-                        with prosthesis. This procedure is carried out to
-                        improve the progressive hearing loss in otosclerotic
-                        patients, a condition in which spongy bone hardens
-                        around the base of the stapes. SStapedectomy is a
-                        surgical procedure carried out to replace the innermost
-                        bone (stapes) of the middle ear with…
+            </div>
+            <div
+              class="tab-pane fade"
+              id="Endoscopic"
+              role="tabpanel"
+              aria-labelledby="Endoscopic-tab"
+            >
+              <div class="row">
+                <div class="d-md-flex align-items-start">
+                  <div
+                    class="nav flex-column nav-pills me-3 position-relative col-md-3 pt-5"
+                    id="v-pills-tab3"
+                    role="tablist"
+                    aria-orientation="vertical"
+                  >
+                    <button
+                      class="nav-link active"
+                      id="v-pills-about3-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#v-pills-about3"
+                      type="button"
+                      role="tab"
+                      aria-controls="v-pills-about3"
+                      aria-selected="true"
+                    >
+                      ABOUT
+                    </button>
+                    <button
+                      class="nav-link"
+                      id="v-pills-INDICATIONS3-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#v-pills-INDICATIONS3"
+                      type="button"
+                      role="tab"
+                      aria-controls="v-pills-INDICATIONS3"
+                      aria-selected="true"
+                    >
+                      INDICATIONS
+                    </button>
+                    <button
+                      class="nav-link"
+                      id="v-pills-RECOVERY3-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#v-pills-RECOVERY3"
+                      type="button"
+                      role="tab"
+                      aria-controls="v-pills-RECOVERY3"
+                      aria-selected="true"
+                    >
+                      RECOVERY PHASE
+                    </button>
+                    <button
+                      class="nav-link"
+                      id="v-pills-POST3-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#v-pills-POST3"
+                      type="button"
+                      role="tab"
+                      aria-controls="v-pills-POST3"
+                      aria-selected="true"
+                    >
+                      POST-SURGERY
+                    </button>
+                    <button
+                      class="nav-link"
+                      id="v-pills-FAQ3-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#v-pills-FAQ3"
+                      type="button"
+                      role="tab"
+                      aria-controls="v-pills-FAQ3"
+                      aria-selected="true"
+                    >
+                      FAQ
+                    </button>
+
+                    <a
+                      href="Appointment.html"
+                      class="book-btn text-center position-absolute"
+                      >Book an appointment</a
+                    >
+                  </div>
+                  <div class="tab-content" id="v-pills-tabContent3">
+                    <div
+                      class="tab-pane fade show active"
+                      id="v-pills-about3"
+                      role="tabpanel"
+                      aria-labelledby="v-pills-about3-tab"
+                    >
+                      <div class="row row-book">
+                        <div class="col-md-7">
+                          <div class="brief">
+                            <a href="#" class="title pt-5"
+                              >Ear & Sinus -Stapedectomy</a
+                            >
+                            <div class="desc pt-3 pb-4">
+                              Stapedectomy is a surgical procedure carried out
+                              to replace the innermost bone (stapes) of the
+                              middle ear with prosthesis. This procedure is
+                              carried out to improve the progressive hearing
+                              loss in otosclerotic patients, a condition in
+                              which spongy bone hardens around the base of the
+                              stapes. SStapedectomy is a surgical procedure
+                              carried out to replace the innermost bone (stapes)
+                              of the middle ear with…
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-5 text-end">
+                          <img
+                            src="assets/img/woman-patient-medical-office-doctor-medical-mask-lor-checks-woman-ears.webp"
+                            alt="book cover"
+                            class="img-fluid"
+                          />
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="col-md-5 text-end">
-                    <img
-                      src="assets/img/woman-patient-medical-office-doctor-medical-mask-lor-checks-woman-ears.webp"
-                      alt="book cover"
-                      class="img-fluid"
-                    />
+                    <div
+                      class="tab-pane fade"
+                      id="v-pills-INDICATIONS3"
+                      role="tabpanel"
+                      aria-labelledby="v-pills-INDICATIONS3-tab"
+                    >
+                      <div class="row row-book">
+                        <div class="col-md-7">
+                          <div class="brief">
+                            <a href="#" class="title pt-5"
+                              >Ear & Sinus -Stapedectomy</a
+                            >
+                            <div class="desc pt-3 pb-4">
+                              Stapedectomy is a surgical procedure carried out
+                              to replace the innermost bone (stapes) of the
+                              middle ear with prosthesis. This procedure is
+                              carried out to improve the progressive hearing
+                              loss in otosclerotic patients, a condition in
+                              which spongy bone hardens around the base of the
+                              stapes. SStapedectomy is a surgical procedure
+                              carried out to replace the innermost bone (stapes)
+                              of the middle ear with…
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-5 text-end">
+                          <img
+                            src="assets/img/woman-patient-medical-office-doctor-medical-mask-lor-checks-woman-ears.webp"
+                            alt="book cover"
+                            class="img-fluid"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="v-pills-RECOVERY3"
+                      role="tabpanel"
+                      aria-labelledby="v-pills-RECOVERY3-tab"
+                    >
+                      <div class="row row-book">
+                        <div class="col-md-7">
+                          <div class="brief">
+                            <a href="#" class="title pt-5"
+                              >Ear & Sinus -Stapedectomy</a
+                            >
+                            <div class="desc pt-3 pb-4">
+                              Stapedectomy is a surgical procedure carried out
+                              to replace the innermost bone (stapes) of the
+                              middle ear with prosthesis. This procedure is
+                              carried out to improve the progressive hearing
+                              loss in otosclerotic patients, a condition in
+                              which spongy bone hardens around the base of the
+                              stapes. SStapedectomy is a surgical procedure
+                              carried out to replace the innermost bone (stapes)
+                              of the middle ear with…
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-5 text-end">
+                          <img
+                            src="assets/img/woman-patient-medical-office-doctor-medical-mask-lor-checks-woman-ears.webp"
+                            alt="book cover"
+                            class="img-fluid"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="v-pills-POST3"
+                      role="tabpanel"
+                      aria-labelledby="v-pills-POST3-tab"
+                    >
+                      <div class="row row-book">
+                        <div class="col-md-7">
+                          <div class="brief">
+                            <a href="#" class="title pt-5"
+                              >Ear & Sinus -Stapedectomy</a
+                            >
+                            <div class="desc pt-3 pb-4">
+                              Stapedectomy is a surgical procedure carried out
+                              to replace the innermost bone (stapes) of the
+                              middle ear with prosthesis. This procedure is
+                              carried out to improve the progressive hearing
+                              loss in otosclerotic patients, a condition in
+                              which spongy bone hardens around the base of the
+                              stapes. SStapedectomy is a surgical procedure
+                              carried out to replace the innermost bone (stapes)
+                              of the middle ear with…
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-5 text-end">
+                          <img
+                            src="assets/img/woman-patient-medical-office-doctor-medical-mask-lor-checks-woman-ears.webp"
+                            alt="book cover"
+                            class="img-fluid"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="v-pills-FAQ3"
+                      role="tabpanel"
+                      aria-labelledby="v-pills-FAQ3-tab"
+                    >
+                      <div class="row row-book">
+                        <div class="col-md-7">
+                          <div class="brief">
+                            <a href="#" class="title pt-5"
+                              >Ear & Sinus -Stapedectomy</a
+                            >
+                            <div class="desc pt-3 pb-4">
+                              Stapedectomy is a surgical procedure carried out
+                              to replace the innermost bone (stapes) of the
+                              middle ear with prosthesis. This procedure is
+                              carried out to improve the progressive hearing
+                              loss in otosclerotic patients, a condition in
+                              which spongy bone hardens around the base of the
+                              stapes. SStapedectomy is a surgical procedure
+                              carried out to replace the innermost bone (stapes)
+                              of the middle ear with…
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-5 text-end">
+                          <img
+                            src="assets/img/woman-patient-medical-office-doctor-medical-mask-lor-checks-woman-ears.webp"
+                            alt="book cover"
+                            class="img-fluid"
+                          />
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div
-                class="tab-pane fade"
-                id="v-pills-RECOVERY"
-                role="tabpanel"
-                aria-labelledby="v-pills-RECOVERY-tab"
-              >
-                <div class="row row-book">
-                  <div class="col-md-7">
-                    <div class="brief">
-                      <a href="#" class="title pt-5"
-                        >Ear & Sinus -Stapedectomy</a
-                      >
-                      <div class="desc pt-3 pb-4">
-                        Stapedectomy is a surgical procedure carried out to
-                        replace the innermost bone (stapes) of the middle ear
-                        with prosthesis. This procedure is carried out to
-                        improve the progressive hearing loss in otosclerotic
-                        patients, a condition in which spongy bone hardens
-                        around the base of the stapes. SStapedectomy is a
-                        surgical procedure carried out to replace the innermost
-                        bone (stapes) of the middle ear with…
+            </div>
+            <div
+              class="tab-pane fade"
+              id="Rahinopalsty"
+              role="tabpanel"
+              aria-labelledby="Rahinopalsty-tab"
+            >
+              <div class="row">
+                <div class="d-md-flex align-items-start">
+                  <div
+                    class="nav flex-column nav-pills me-3 position-relative col-md-3 pt-5"
+                    id="v-pills-tab4"
+                    role="tablist"
+                    aria-orientation="vertical"
+                  >
+                    <button
+                      class="nav-link active"
+                      id="v-pills-about4-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#v-pills-about4"
+                      type="button"
+                      role="tab"
+                      aria-controls="v-pills-about4"
+                      aria-selected="true"
+                    >
+                      ABOUT
+                    </button>
+                    <button
+                      class="nav-link"
+                      id="v-pills-INDICATIONS4-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#v-pills-INDICATIONS4"
+                      type="button"
+                      role="tab"
+                      aria-controls="v-pills-INDICATIONS4"
+                      aria-selected="true"
+                    >
+                      INDICATIONS
+                    </button>
+                    <button
+                      class="nav-link"
+                      id="v-pills-RECOVERY4-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#v-pills-RECOVERY4"
+                      type="button"
+                      role="tab"
+                      aria-controls="v-pills-RECOVERY4"
+                      aria-selected="true"
+                    >
+                      RECOVERY PHASE
+                    </button>
+                    <button
+                      class="nav-link"
+                      id="v-pills-POST4-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#v-pills-POST4"
+                      type="button"
+                      role="tab"
+                      aria-controls="v-pills-POST4"
+                      aria-selected="true"
+                    >
+                      POST-SURGERY
+                    </button>
+                    <button
+                      class="nav-link"
+                      id="v-pills-FAQ4-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#v-pills-FAQ4"
+                      type="button"
+                      role="tab"
+                      aria-controls="v-pills-FAQ4"
+                      aria-selected="true"
+                    >
+                      FAQ
+                    </button>
+
+                    <a
+                      href="Appointment.html"
+                      class="book-btn text-center position-absolute"
+                      >Book an appointment</a
+                    >
+                  </div>
+                  <div class="tab-content" id="v-pills-tabContent4">
+                    <div
+                      class="tab-pane fade show active"
+                      id="v-pills-about4"
+                      role="tabpanel"
+                      aria-labelledby="v-pills-about4-tab"
+                    >
+                      <div class="row row-book">
+                        <div class="col-md-7">
+                          <div class="brief">
+                            <a href="#" class="title pt-5"
+                              >Ear & Sinus -Stapedectomy</a
+                            >
+                            <div class="desc pt-3 pb-4">
+                              Stapedectomy is a surgical procedure carried out
+                              to replace the innermost bone (stapes) of the
+                              middle ear with prosthesis. This procedure is
+                              carried out to improve the progressive hearing
+                              loss in otosclerotic patients, a condition in
+                              which spongy bone hardens around the base of the
+                              stapes. SStapedectomy is a surgical procedure
+                              carried out to replace the innermost bone (stapes)
+                              of the middle ear with…
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-5 text-end">
+                          <img
+                            src="assets/img/woman-patient-medical-office-doctor-medical-mask-lor-checks-woman-ears.webp"
+                            alt="book cover"
+                            class="img-fluid"
+                          />
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="col-md-5 text-end">
-                    <img
-                      src="assets/img/woman-patient-medical-office-doctor-medical-mask-lor-checks-woman-ears.webp"
-                      alt="book cover"
-                      class="img-fluid"
-                    />
+                    <div
+                      class="tab-pane fade"
+                      id="v-pills-INDICATIONS4"
+                      role="tabpanel"
+                      aria-labelledby="v-pills-INDICATIONS4-tab"
+                    >
+                      <div class="row row-book">
+                        <div class="col-md-7">
+                          <div class="brief">
+                            <a href="#" class="title pt-5"
+                              >Ear & Sinus -Stapedectomy</a
+                            >
+                            <div class="desc pt-3 pb-4">
+                              Stapedectomy is a surgical procedure carried out
+                              to replace the innermost bone (stapes) of the
+                              middle ear with prosthesis. This procedure is
+                              carried out to improve the progressive hearing
+                              loss in otosclerotic patients, a condition in
+                              which spongy bone hardens around the base of the
+                              stapes. SStapedectomy is a surgical procedure
+                              carried out to replace the innermost bone (stapes)
+                              of the middle ear with…
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-5 text-end">
+                          <img
+                            src="assets/img/woman-patient-medical-office-doctor-medical-mask-lor-checks-woman-ears.webp"
+                            alt="book cover"
+                            class="img-fluid"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="v-pills-RECOVERY4"
+                      role="tabpanel"
+                      aria-labelledby="v-pills-RECOVERY4-tab"
+                    >
+                      <div class="row row-book">
+                        <div class="col-md-7">
+                          <div class="brief">
+                            <a href="#" class="title pt-5"
+                              >Ear & Sinus -Stapedectomy</a
+                            >
+                            <div class="desc pt-3 pb-4">
+                              Stapedectomy is a surgical procedure carried out
+                              to replace the innermost bone (stapes) of the
+                              middle ear with prosthesis. This procedure is
+                              carried out to improve the progressive hearing
+                              loss in otosclerotic patients, a condition in
+                              which spongy bone hardens around the base of the
+                              stapes. SStapedectomy is a surgical procedure
+                              carried out to replace the innermost bone (stapes)
+                              of the middle ear with…
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-5 text-end">
+                          <img
+                            src="assets/img/woman-patient-medical-office-doctor-medical-mask-lor-checks-woman-ears.webp"
+                            alt="book cover"
+                            class="img-fluid"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="v-pills-POST4"
+                      role="tabpanel"
+                      aria-labelledby="v-pills-POST4-tab"
+                    >
+                      <div class="row row-book">
+                        <div class="col-md-7">
+                          <div class="brief">
+                            <a href="#" class="title pt-5"
+                              >Ear & Sinus -Stapedectomy</a
+                            >
+                            <div class="desc pt-3 pb-4">
+                              Stapedectomy is a surgical procedure carried out
+                              to replace the innermost bone (stapes) of the
+                              middle ear with prosthesis. This procedure is
+                              carried out to improve the progressive hearing
+                              loss in otosclerotic patients, a condition in
+                              which spongy bone hardens around the base of the
+                              stapes. SStapedectomy is a surgical procedure
+                              carried out to replace the innermost bone (stapes)
+                              of the middle ear with…
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-5 text-end">
+                          <img
+                            src="assets/img/woman-patient-medical-office-doctor-medical-mask-lor-checks-woman-ears.webp"
+                            alt="book cover"
+                            class="img-fluid"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="v-pills-FAQ4"
+                      role="tabpanel"
+                      aria-labelledby="v-pills-FAQ4-tab"
+                    >
+                      <div class="row row-book">
+                        <div class="col-md-7">
+                          <div class="brief">
+                            <a href="#" class="title pt-5"
+                              >Ear & Sinus -Stapedectomy</a
+                            >
+                            <div class="desc pt-3 pb-4">
+                              Stapedectomy is a surgical procedure carried out
+                              to replace the innermost bone (stapes) of the
+                              middle ear with prosthesis. This procedure is
+                              carried out to improve the progressive hearing
+                              loss in otosclerotic patients, a condition in
+                              which spongy bone hardens around the base of the
+                              stapes. SStapedectomy is a surgical procedure
+                              carried out to replace the innermost bone (stapes)
+                              of the middle ear with…
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-5 text-end">
+                          <img
+                            src="assets/img/woman-patient-medical-office-doctor-medical-mask-lor-checks-woman-ears.webp"
+                            alt="book cover"
+                            class="img-fluid"
+                          />
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div
-                class="tab-pane fade"
-                id="v-pills-POST"
-                role="tabpanel"
-                aria-labelledby="v-pills-POST-tab"
-              >
-                <div class="row row-book">
-                  <div class="col-md-7">
-                    <div class="brief">
-                      <a href="#" class="title pt-5"
-                        >Ear & Sinus -Stapedectomy</a
-                      >
-                      <div class="desc pt-3 pb-4">
-                        Stapedectomy is a surgical procedure carried out to
-                        replace the innermost bone (stapes) of the middle ear
-                        with prosthesis. This procedure is carried out to
-                        improve the progressive hearing loss in otosclerotic
-                        patients, a condition in which spongy bone hardens
-                        around the base of the stapes. SStapedectomy is a
-                        surgical procedure carried out to replace the innermost
-                        bone (stapes) of the middle ear with…
+            </div>
+            <div
+              class="tab-pane fade"
+              id="Spetoplasty"
+              role="tabpanel"
+              aria-labelledby="Spetoplasty-tab"
+            >
+              <div class="row">
+                <div class="d-md-flex align-items-start">
+                  <div
+                    class="nav flex-column nav-pills me-3 position-relative col-md-3 pt-5"
+                    id="v-pills-tab5"
+                    role="tablist"
+                    aria-orientation="vertical"
+                  >
+                    <button
+                      class="nav-link active"
+                      id="v-pills-about5-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#v-pills-about5"
+                      type="button"
+                      role="tab"
+                      aria-controls="v-pills-about5"
+                      aria-selected="true"
+                    >
+                      ABOUT
+                    </button>
+                    <button
+                      class="nav-link"
+                      id="v-pills-INDICATIONS5-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#v-pills-INDICATIONS5"
+                      type="button"
+                      role="tab"
+                      aria-controls="v-pills-INDICATIONS5"
+                      aria-selected="true"
+                    >
+                      INDICATIONS
+                    </button>
+                    <button
+                      class="nav-link"
+                      id="v-pills-RECOVERY5-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#v-pills-RECOVERY5"
+                      type="button"
+                      role="tab"
+                      aria-controls="v-pills-RECOVERY5"
+                      aria-selected="true"
+                    >
+                      RECOVERY PHASE
+                    </button>
+                    <button
+                      class="nav-link"
+                      id="v-pills-POST5-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#v-pills-POST5"
+                      type="button"
+                      role="tab"
+                      aria-controls="v-pills-POST5"
+                      aria-selected="true"
+                    >
+                      POST-SURGERY
+                    </button>
+                    <button
+                      class="nav-link"
+                      id="v-pills-FAQ5-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#v-pills-FAQ5"
+                      type="button"
+                      role="tab"
+                      aria-controls="v-pills-FAQ5"
+                      aria-selected="true"
+                    >
+                      FAQ
+                    </button>
+
+                    <a
+                      href="Appointment.html"
+                      class="book-btn text-center position-absolute"
+                      >Book an appointment</a
+                    >
+                  </div>
+                  <div class="tab-content" id="v-pills-tabContent5">
+                    <div
+                      class="tab-pane fade show active"
+                      id="v-pills-about5"
+                      role="tabpanel"
+                      aria-labelledby="v-pills-about5-tab"
+                    >
+                      <div class="row row-book">
+                        <div class="col-md-7">
+                          <div class="brief">
+                            <a href="#" class="title pt-5"
+                              >Ear & Sinus -Stapedectomy</a
+                            >
+                            <div class="desc pt-3 pb-4">
+                              Stapedectomy is a surgical procedure carried out
+                              to replace the innermost bone (stapes) of the
+                              middle ear with prosthesis. This procedure is
+                              carried out to improve the progressive hearing
+                              loss in otosclerotic patients, a condition in
+                              which spongy bone hardens around the base of the
+                              stapes. SStapedectomy is a surgical procedure
+                              carried out to replace the innermost bone (stapes)
+                              of the middle ear with…
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-5 text-end">
+                          <img
+                            src="assets/img/woman-patient-medical-office-doctor-medical-mask-lor-checks-woman-ears.webp"
+                            alt="book cover"
+                            class="img-fluid"
+                          />
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="col-md-5 text-end">
-                    <img
-                      src="assets/img/woman-patient-medical-office-doctor-medical-mask-lor-checks-woman-ears.webp"
-                      alt="book cover"
-                      class="img-fluid"
-                    />
+                    <div
+                      class="tab-pane fade"
+                      id="v-pills-INDICATIONS5"
+                      role="tabpanel"
+                      aria-labelledby="v-pills-INDICATIONS5-tab"
+                    >
+                      <div class="row row-book">
+                        <div class="col-md-7">
+                          <div class="brief">
+                            <a href="#" class="title pt-5"
+                              >Ear & Sinus -Stapedectomy</a
+                            >
+                            <div class="desc pt-3 pb-4">
+                              Stapedectomy is a surgical procedure carried out
+                              to replace the innermost bone (stapes) of the
+                              middle ear with prosthesis. This procedure is
+                              carried out to improve the progressive hearing
+                              loss in otosclerotic patients, a condition in
+                              which spongy bone hardens around the base of the
+                              stapes. SStapedectomy is a surgical procedure
+                              carried out to replace the innermost bone (stapes)
+                              of the middle ear with…
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-5 text-end">
+                          <img
+                            src="assets/img/woman-patient-medical-office-doctor-medical-mask-lor-checks-woman-ears.webp"
+                            alt="book cover"
+                            class="img-fluid"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="v-pills-RECOVERY5"
+                      role="tabpanel"
+                      aria-labelledby="v-pills-RECOVERY5-tab"
+                    >
+                      <div class="row row-book">
+                        <div class="col-md-7">
+                          <div class="brief">
+                            <a href="#" class="title pt-5"
+                              >Ear & Sinus -Stapedectomy</a
+                            >
+                            <div class="desc pt-3 pb-4">
+                              Stapedectomy is a surgical procedure carried out
+                              to replace the innermost bone (stapes) of the
+                              middle ear with prosthesis. This procedure is
+                              carried out to improve the progressive hearing
+                              loss in otosclerotic patients, a condition in
+                              which spongy bone hardens around the base of the
+                              stapes. SStapedectomy is a surgical procedure
+                              carried out to replace the innermost bone (stapes)
+                              of the middle ear with…
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-5 text-end">
+                          <img
+                            src="assets/img/woman-patient-medical-office-doctor-medical-mask-lor-checks-woman-ears.webp"
+                            alt="book cover"
+                            class="img-fluid"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="v-pills-POST5"
+                      role="tabpanel"
+                      aria-labelledby="v-pills-POST5-tab"
+                    >
+                      <div class="row row-book">
+                        <div class="col-md-7">
+                          <div class="brief">
+                            <a href="#" class="title pt-5"
+                              >Ear & Sinus -Stapedectomy</a
+                            >
+                            <div class="desc pt-3 pb-4">
+                              Stapedectomy is a surgical procedure carried out
+                              to replace the innermost bone (stapes) of the
+                              middle ear with prosthesis. This procedure is
+                              carried out to improve the progressive hearing
+                              loss in otosclerotic patients, a condition in
+                              which spongy bone hardens around the base of the
+                              stapes. SStapedectomy is a surgical procedure
+                              carried out to replace the innermost bone (stapes)
+                              of the middle ear with…
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-5 text-end">
+                          <img
+                            src="assets/img/woman-patient-medical-office-doctor-medical-mask-lor-checks-woman-ears.webp"
+                            alt="book cover"
+                            class="img-fluid"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="v-pills-FAQ5"
+                      role="tabpanel"
+                      aria-labelledby="v-pills-FAQ5-tab"
+                    >
+                      <div class="row row-book">
+                        <div class="col-md-7">
+                          <div class="brief">
+                            <a href="#" class="title pt-5"
+                              >Ear & Sinus -Stapedectomy</a
+                            >
+                            <div class="desc pt-3 pb-4">
+                              Stapedectomy is a surgical procedure carried out
+                              to replace the innermost bone (stapes) of the
+                              middle ear with prosthesis. This procedure is
+                              carried out to improve the progressive hearing
+                              loss in otosclerotic patients, a condition in
+                              which spongy bone hardens around the base of the
+                              stapes. SStapedectomy is a surgical procedure
+                              carried out to replace the innermost bone (stapes)
+                              of the middle ear with…
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-5 text-end">
+                          <img
+                            src="assets/img/woman-patient-medical-office-doctor-medical-mask-lor-checks-woman-ears.webp"
+                            alt="book cover"
+                            class="img-fluid"
+                          />
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div
-                class="tab-pane fade"
-                id="v-pills-FAQ"
-                role="tabpanel"
-                aria-labelledby="v-pills-FAQ-tab"
-              >
-                <div class="row row-book">
-                  <div class="col-md-7">
-                    <div class="brief">
-                      <a href="#" class="title pt-5"
-                        >Ear & Sinus -Stapedectomy</a
-                      >
-                      <div class="desc pt-3 pb-4">
-                        Stapedectomy is a surgical procedure carried out to
-                        replace the innermost bone (stapes) of the middle ear
-                        with prosthesis. This procedure is carried out to
-                        improve the progressive hearing loss in otosclerotic
-                        patients, a condition in which spongy bone hardens
-                        around the base of the stapes. SStapedectomy is a
-                        surgical procedure carried out to replace the innermost
-                        bone (stapes) of the middle ear with…
+            </div>
+            <div
+              class="tab-pane fade"
+              id="Oral"
+              role="tabpanel"
+              aria-labelledby="Oral-tab"
+            >
+              <div class="row">
+                <div class="d-md-flex align-items-start">
+                  <div
+                    class="nav flex-column nav-pills me-3 position-relative col-md-3 pt-5"
+                    id="v-pills-tab6"
+                    role="tablist"
+                    aria-orientation="vertical"
+                  >
+                    <button
+                      class="nav-link active"
+                      id="v-pills-about6-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#v-pills-about6"
+                      type="button"
+                      role="tab"
+                      aria-controls="v-pills-about6"
+                      aria-selected="true"
+                    >
+                      ABOUT
+                    </button>
+                    <button
+                      class="nav-link"
+                      id="v-pills-INDICATIONS6-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#v-pills-INDICATIONS6"
+                      type="button"
+                      role="tab"
+                      aria-controls="v-pills-INDICATIONS6"
+                      aria-selected="true"
+                    >
+                      INDICATIONS
+                    </button>
+                    <button
+                      class="nav-link"
+                      id="v-pills-RECOVERY6-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#v-pills-RECOVERY6"
+                      type="button"
+                      role="tab"
+                      aria-controls="v-pills-RECOVERY6"
+                      aria-selected="true"
+                    >
+                      RECOVERY PHASE
+                    </button>
+                    <button
+                      class="nav-link"
+                      id="v-pills-POST6-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#v-pills-POST6"
+                      type="button"
+                      role="tab"
+                      aria-controls="v-pills-POST6"
+                      aria-selected="true"
+                    >
+                      POST-SURGERY
+                    </button>
+                    <button
+                      class="nav-link"
+                      id="v-pills-FAQ6-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#v-pills-FAQ6"
+                      type="button"
+                      role="tab"
+                      aria-controls="v-pills-FAQ6"
+                      aria-selected="true"
+                    >
+                      FAQ
+                    </button>
+
+                    <a
+                      href="Appointment.html"
+                      class="book-btn text-center position-absolute"
+                      >Book an appointment</a
+                    >
+                  </div>
+                  <div class="tab-content" id="v-pills-tabContent6">
+                    <div
+                      class="tab-pane fade show active"
+                      id="v-pills-about6"
+                      role="tabpanel"
+                      aria-labelledby="v-pills-about6-tab"
+                    >
+                      <div class="row row-book">
+                        <div class="col-md-7">
+                          <div class="brief">
+                            <a href="#" class="title pt-5"
+                              >Ear & Sinus -Stapedectomy</a
+                            >
+                            <div class="desc pt-3 pb-4">
+                              Stapedectomy is a surgical procedure carried out
+                              to replace the innermost bone (stapes) of the
+                              middle ear with prosthesis. This procedure is
+                              carried out to improve the progressive hearing
+                              loss in otosclerotic patients, a condition in
+                              which spongy bone hardens around the base of the
+                              stapes. SStapedectomy is a surgical procedure
+                              carried out to replace the innermost bone (stapes)
+                              of the middle ear with…
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-5 text-end">
+                          <img
+                            src="assets/img/woman-patient-medical-office-doctor-medical-mask-lor-checks-woman-ears.webp"
+                            alt="book cover"
+                            class="img-fluid"
+                          />
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="col-md-5 text-end">
-                    <img
-                      src="assets/img/woman-patient-medical-office-doctor-medical-mask-lor-checks-woman-ears.webp"
-                      alt="book cover"
-                      class="img-fluid"
-                    />
+                    <div
+                      class="tab-pane fade"
+                      id="v-pills-INDICATIONS6"
+                      role="tabpanel"
+                      aria-labelledby="v-pills-INDICATIONS6-tab"
+                    >
+                      <div class="row row-book">
+                        <div class="col-md-7">
+                          <div class="brief">
+                            <a href="#" class="title pt-5"
+                              >Ear & Sinus -Stapedectomy</a
+                            >
+                            <div class="desc pt-3 pb-4">
+                              Stapedectomy is a surgical procedure carried out
+                              to replace the innermost bone (stapes) of the
+                              middle ear with prosthesis. This procedure is
+                              carried out to improve the progressive hearing
+                              loss in otosclerotic patients, a condition in
+                              which spongy bone hardens around the base of the
+                              stapes. SStapedectomy is a surgical procedure
+                              carried out to replace the innermost bone (stapes)
+                              of the middle ear with…
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-5 text-end">
+                          <img
+                            src="assets/img/woman-patient-medical-office-doctor-medical-mask-lor-checks-woman-ears.webp"
+                            alt="book cover"
+                            class="img-fluid"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="v-pills-RECOVERY6"
+                      role="tabpanel"
+                      aria-labelledby="v-pills-RECOVERY6-tab"
+                    >
+                      <div class="row row-book">
+                        <div class="col-md-7">
+                          <div class="brief">
+                            <a href="#" class="title pt-5"
+                              >Ear & Sinus -Stapedectomy</a
+                            >
+                            <div class="desc pt-3 pb-4">
+                              Stapedectomy is a surgical procedure carried out
+                              to replace the innermost bone (stapes) of the
+                              middle ear with prosthesis. This procedure is
+                              carried out to improve the progressive hearing
+                              loss in otosclerotic patients, a condition in
+                              which spongy bone hardens around the base of the
+                              stapes. SStapedectomy is a surgical procedure
+                              carried out to replace the innermost bone (stapes)
+                              of the middle ear with…
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-5 text-end">
+                          <img
+                            src="assets/img/woman-patient-medical-office-doctor-medical-mask-lor-checks-woman-ears.webp"
+                            alt="book cover"
+                            class="img-fluid"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="v-pills-POST6"
+                      role="tabpanel"
+                      aria-labelledby="v-pills-POST6-tab"
+                    >
+                      <div class="row row-book">
+                        <div class="col-md-7">
+                          <div class="brief">
+                            <a href="#" class="title pt-5"
+                              >Ear & Sinus -Stapedectomy</a
+                            >
+                            <div class="desc pt-3 pb-4">
+                              Stapedectomy is a surgical procedure carried out
+                              to replace the innermost bone (stapes) of the
+                              middle ear with prosthesis. This procedure is
+                              carried out to improve the progressive hearing
+                              loss in otosclerotic patients, a condition in
+                              which spongy bone hardens around the base of the
+                              stapes. SStapedectomy is a surgical procedure
+                              carried out to replace the innermost bone (stapes)
+                              of the middle ear with…
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-5 text-end">
+                          <img
+                            src="assets/img/woman-patient-medical-office-doctor-medical-mask-lor-checks-woman-ears.webp"
+                            alt="book cover"
+                            class="img-fluid"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="v-pills-FAQ6"
+                      role="tabpanel"
+                      aria-labelledby="v-pills-FAQ6-tab"
+                    >
+                      <div class="row row-book">
+                        <div class="col-md-7">
+                          <div class="brief">
+                            <a href="#" class="title pt-5"
+                              >Ear & Sinus -Stapedectomy</a
+                            >
+                            <div class="desc pt-3 pb-4">
+                              Stapedectomy is a surgical procedure carried out
+                              to replace the innermost bone (stapes) of the
+                              middle ear with prosthesis. This procedure is
+                              carried out to improve the progressive hearing
+                              loss in otosclerotic patients, a condition in
+                              which spongy bone hardens around the base of the
+                              stapes. SStapedectomy is a surgical procedure
+                              carried out to replace the innermost bone (stapes)
+                              of the middle ear with…
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-5 text-end">
+                          <img
+                            src="assets/img/woman-patient-medical-office-doctor-medical-mask-lor-checks-woman-ears.webp"
+                            alt="book cover"
+                            class="img-fluid"
+                          />
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -401,6 +1762,7 @@
         </div>
       </div>
     </section>
+
     <!-- team start -->
     <section class="team py-5 my-5 position-relative">
       <img
@@ -641,8 +2003,8 @@
         <div class="box position-relative">
           <img src="assets/img/spe1.webp" alt="photo" class="img-fluid" />
           <a
-            href="Appointment.html"
-            class="lead-btn text-center position-absolute top-50 start-50 translate-middle"
+            href="health-library.html"
+            class="lead-btn lead-blog-btn text-center position-absolute top-50 start-50 translate-middle"
             >Latest on the news</a
           >
         </div>
@@ -831,6 +2193,11 @@
             items: 5,
           },
         },
+      });
+    </script>
+    <script>
+      $(".lead-blog-btn").click(function () {
+        localStorage.setItem("activeTab", "Blogs");
       });
     </script>
   </body>

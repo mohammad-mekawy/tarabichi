@@ -74,7 +74,7 @@
           alt="logo icon ball"
         /> -->
         <h1 class="title text-center text-white position-relative">
-          institutes & Departments
+          health library
         </h1>
         <nav style="--bs-breadcrumb-divider: ' '" aria-label="breadcrumb">
           <ol
@@ -167,7 +167,7 @@
               data-bs-target="#pills-Blogs"
               type="button"
               role="tab"
-              aria-controls="pills-Events"
+              aria-controls="pills-Blogs"
               aria-selected="false"
             >
               Latest Blogs
@@ -190,7 +190,7 @@
         </ul>
         <div class="tab-content pt-5" id="pills-tabContent">
           <div
-            class="tab-pane fade T-tab  show active"
+            class="tab-pane fade T-tab show active"
             id="pills-Books"
             role="tabpanel"
             aria-labelledby="pills-Books-tab"
@@ -792,7 +792,7 @@
                       <p>10 AM - 3 PM</p>
                     </div>
 
-                    <a href="#" class="awards-btn mb-4 d-block text-center"
+                    <a href="post.html" class="awards-btn mb-4 d-block text-center"
                       >Read More</a
                     >
                   </div>
@@ -849,7 +849,7 @@
                       <p>10 AM - 3 PM</p>
                     </div>
 
-                    <a href="#" class="awards-btn mb-4 d-block text-center"
+                    <a href="post.html" class="awards-btn mb-4 d-block text-center"
                       >Read More</a
                     >
                   </div>
@@ -906,7 +906,7 @@
                       <p>10 AM - 3 PM</p>
                     </div>
 
-                    <a href="#" class="awards-btn mb-4 d-block text-center"
+                    <a href="post.html" class="awards-btn mb-4 d-block text-center"
                       >Read More</a
                     >
                   </div>
@@ -1513,5 +1513,13 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+      var activeTab = localStorage.getItem('activeTab');
+    if(activeTab){
+        $(`#pills-${activeTab}-tab`).addClass('active').parent().siblings().children(".nav-link").removeClass("active");
+        $(`#pills-${activeTab}`).addClass('show active').siblings().removeClass("show active");
+        localStorage.removeItem("activeTab")
+    }
+    </script>
   </body>
 </html>
