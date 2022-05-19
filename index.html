@@ -531,7 +531,11 @@
                   <li>
                     <a href="Appointment.html#Partners"> Insurance Partners</a>
                   </li>
-                  <li><a href="#"> Testimonials</a></li>
+                  <li>
+                    <a href="health-library.html" class="Testimonials">
+                      Testimonials</a
+                    >
+                  </li>
                 </ul>
               </div>
               <div class="col-md-6">
@@ -616,6 +620,9 @@
     <script>
       $(".events-lead").click(function () {
         localStorage.setItem("activeTab", "Awards");
+      });
+      $(".Testimonials").click(function () {
+        localStorage.setItem("activeTab", "Testimonials");
       });
     </script>
   </body>
