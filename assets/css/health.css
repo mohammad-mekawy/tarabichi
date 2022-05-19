@@ -211,7 +211,7 @@ body {
   background-color: transparent;
   -webkit-transition: all 500ms;
   transition: all 500ms;
-  width: 219px;
+  width: 180px;
   padding: 6px 0;
   margin-bottom: 20px;
 }
@@ -518,6 +518,28 @@ body {
 
 .tabs .Blogs .post:hover .post-hover-layer {
   opacity: 1;
+}
+
+.tabs .testimonial {
+  border: 1px solid var(--mid-green);
+  border-radius: 5px;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+  -webkit-box-shadow: 0px 5px 10px 8px rgba(0, 0, 0, 0.06);
+          box-shadow: 0px 5px 10px 8px rgba(0, 0, 0, 0.06);
+  margin-bottom: 50px;
+}
+
+.tabs .testimonial:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.tabs .testimonial img {
+  width: 60px;
+  margin-top: -30px;
+  border: 1px solid var(--mid-green);
+  border-radius: 50%;
 }
 
 .locations {
